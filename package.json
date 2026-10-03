@@ -1,0 +1,23 @@
+{
+  "name": "musemontpellier.com",
+  "version": "1.0.0",
+  "description": "Site one page de MUSE, brasserie bistronomique à Montpellier",
+  "scripts": {
+    "images": "node scripts/build-images.mjs",
+    "serve": "npx --yes http-server . -p 8080 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakxxi/musemontpellier.com.git"
+  },
+  "author": "AKER",
+  "bugs": {
+    "url": "https://github.com/zakxxi/musemontpellier.com/issues"
+  },
+  "homepage": "https://github.com/zakxxi/musemontpellier.com#readme",
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  },
+  "private": true,
+  "type": "module"
+}

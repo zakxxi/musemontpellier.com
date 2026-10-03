@@ -1,0 +1,405 @@
+{
+  "muse-montpellier-tour-higher-roch-paysage": {
+    "widths": [
+      800,
+      1200,
+      1600,
+      2320
+    ],
+    "fallback": 1600,
+    "width": 2326,
+    "height": 1163,
+    "ratio": 0.5,
+    "alt": "La tour Higher Roch, dont MUSE occupe le rez-de-chaussée, quartier Nouveau Saint-Roch à Montpellier"
+  },
+  "muse-montpellier-tour-higher-roch-portrait": {
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "fallback": 800,
+    "width": 2326,
+    "height": 3489,
+    "ratio": 1.5,
+    "alt": "La tour Higher Roch, dont MUSE occupe le rez-de-chaussée, quartier Nouveau Saint-Roch à Montpellier"
+  },
+  "muse-montpellier-salle-crepuscule-saint-roch": {
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "fallback": 800,
+    "width": 3200,
+    "height": 4000,
+    "ratio": 1.25,
+    "alt": ""
+  },
+  "muse-montpellier-salle-baies-vitrees": {
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "fallback": 800,
+    "width": 4000,
+    "height": 3200,
+    "ratio": 0.8,
+    "alt": ""
+  },
+  "muse-montpellier-salle-plantes-bananier": {
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "fallback": 800,
+    "width": 3200,
+    "height": 4000,
+    "ratio": 1.25,
+    "alt": ""
+  },
+  "muse-montpellier-salle-tables-sequoia": {
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "fallback": 800,
+    "width": 4000,
+    "height": 3200,
+    "ratio": 0.8,
+    "alt": ""
+  },
+  "muse-montpellier-bar-grandes-tables": {
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "fallback": 800,
+    "width": 4000,
+    "height": 3200,
+    "ratio": 0.8,
+    "alt": ""
+  },
+  "muse-montpellier-cuisine-ouverte": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "fallback": 800,
+    "width": 4000,
+    "height": 3200,
+    "ratio": 0.8,
+    "alt": ""
+  },
+  "muse-montpellier-dressage-assiette": {
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "fallback": 800,
+    "width": 3200,
+    "height": 4000,
+    "ratio": 1.25,
+    "alt": ""
+  },
+  "muse-montpellier-brigade-en-cuisine": {
+    "widths": [
+      480,
+      800,
+      1200
+    ],
+    "fallback": 800,
+    "width": 4000,
+    "height": 3200,
+    "ratio": 0.8,
+    "alt": ""
+  },
+  "muse-montpellier-assiette-saison-01": {
+    "widths": [
+      480,
+      800,
+      1000
+    ],
+    "fallback": 800,
+    "width": 2560,
+    "height": 3200,
+    "ratio": 1.25,
+    "alt": ""
+  },
+  "muse-montpellier-assiette-saison-02": {
+    "widths": [
+      480,
+      800,
+      1000
+    ],
+    "fallback": 800,
+    "width": 2560,
+    "height": 3200,
+    "ratio": 1.25,
+    "alt": ""
+  },
+  "muse-montpellier-assiette-saison-03": {
+    "widths": [
+      480,
+      800,
+      1000
+    ],
+    "fallback": 800,
+    "width": 2560,
+    "height": 3200,
+    "ratio": 1.25,
+    "alt": ""
+  },
+  "muse-montpellier-assiette-saison-04": {
+    "widths": [
+      480,
+      800,
+      1000
+    ],
+    "fallback": 800,
+    "width": 2560,
+    "height": 3200,
+    "ratio": 1.25,
+    "alt": ""
+  },
+  "muse-montpellier-assiette-saison-05": {
+    "widths": [
+      480,
+      800,
+      1000
+    ],
+    "fallback": 800,
+    "width": 2560,
+    "height": 3200,
+    "ratio": 1.25,
+    "alt": ""
+  },
+  "muse-montpellier-assiette-saison-06": {
+    "widths": [
+      480,
+      800,
+      1000
+    ],
+    "fallback": 800,
+    "width": 2560,
+    "height": 3200,
+    "ratio": 1.25,
+    "alt": ""
+  },
+  "muse-montpellier-assiette-saison-07": {
+    "widths": [
+      480,
+      800
+    ],
+    "fallback": 800,
+    "width": 2261,
+    "height": 3200,
+    "ratio": 1.4153,
+    "alt": ""
+  },
+  "muse-montpellier-assiette-saison-08": {
+    "widths": [
+      480,
+      800
+    ],
+    "fallback": 800,
+    "width": 2261,
+    "height": 3200,
+    "ratio": 1.4153,
+    "alt": ""
+  },
+  "muse-montpellier-carte-midi": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1985,
+    "height": 2807,
+    "ratio": 1.4141
+  },
+  "muse-montpellier-carte-soir": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1985,
+    "height": 2807,
+    "ratio": 1.4141
+  },
+  "muse-montpellier-boissons-chaudes-softs": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1399,
+    "height": 1985,
+    "ratio": 1.4189
+  },
+  "muse-montpellier-boissons-softs-bieres": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1399,
+    "height": 1985,
+    "ratio": 1.4189
+  },
+  "muse-montpellier-boissons-spritz-aperitifs": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1399,
+    "height": 1985,
+    "ratio": 1.4189
+  },
+  "muse-montpellier-boissons-cocktails-alcools": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1399,
+    "height": 1985,
+    "ratio": 1.4189
+  },
+  "muse-montpellier-boissons-rhums": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1399,
+    "height": 1985,
+    "ratio": 1.4189
+  },
+  "muse-montpellier-boissons-whiskies-gins": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1399,
+    "height": 1985,
+    "ratio": 1.4189
+  },
+  "muse-montpellier-boissons-vodkas-tequilas-mezcals": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1399,
+    "height": 1985,
+    "ratio": 1.4189
+  },
+  "muse-montpellier-vins-au-verre": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1399,
+    "height": 1985,
+    "ratio": 1.4189
+  },
+  "muse-montpellier-vins-rouges-languedoc": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1985,
+    "height": 2807,
+    "ratio": 1.4141
+  },
+  "muse-montpellier-vins-rouges-rhone-bourgogne-loire": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1985,
+    "height": 2807,
+    "ratio": 1.4141
+  },
+  "muse-montpellier-vins-rouges-roussillon-espagne": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1985,
+    "height": 2807,
+    "ratio": 1.4141
+  },
+  "muse-montpellier-vins-blancs-languedoc-bourgogne": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1985,
+    "height": 2807,
+    "ratio": 1.4141
+  },
+  "muse-montpellier-vins-blancs-loire-roussillon-espagne": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1985,
+    "height": 2807,
+    "ratio": 1.4141
+  },
+  "muse-montpellier-vins-roses-orange": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1985,
+    "height": 2807,
+    "ratio": 1.4141
+  },
+  "muse-montpellier-champagnes": {
+    "widths": [
+      600,
+      1000,
+      1600
+    ],
+    "fallback": 1000,
+    "width": 1985,
+    "height": 2807,
+    "ratio": 1.4141
+  }
+}

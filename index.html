@@ -1,36 +1,778 @@
-<!doctype html>
-<html lang="fr" class="scroll-smooth">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Muse Montpellier</title>
-    <meta name="description" content="" />
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MUSE · Brasserie bistronomique à Montpellier Saint-Roch</title>
+<meta name="description" content="Brasserie bistronomique au pied de la tour Higher Roch, à deux pas de la gare Saint-Roch : cuisine méditerranéenne de saison, bar, coworking et privatisation. Ouvert 7j/7.">
+<link rel="canonical" href="https://musemontpellier.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#ffffff">
 
-    <!-- Tailwind CSS v4 (build navigateur, pour prototypage) -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-        --color-brand: oklch(0.55 0.2 264);
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MUSE Montpellier">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://musemontpellier.com/">
+<meta property="og:title" content="MUSE · Brasserie bistronomique à Montpellier">
+<meta property="og:description" content="Au rez-de-chaussée de la tour Higher Roch, près de la gare Saint-Roch : cuisine méditerranéenne de saison, bar, coworking et privatisation. Ouvert 7j/7.">
+<meta property="og:image" content="https://musemontpellier.com/assets/brand/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MUSE, brasserie bistronomique au pied de la tour Higher Roch à Montpellier">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preload" href="assets/fonts/hanken-grotesk-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/avif" media="(min-width: 900px)" imagesrcset="assets/img/muse-montpellier-tour-higher-roch-paysage-800.avif 800w, assets/img/muse-montpellier-tour-higher-roch-paysage-1200.avif 1200w, assets/img/muse-montpellier-tour-higher-roch-paysage-1600.avif 1600w, assets/img/muse-montpellier-tour-higher-roch-paysage-2320.avif 2320w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" media="(max-width: 899.98px)" imagesrcset="assets/img/muse-montpellier-tour-higher-roch-portrait-480.avif 480w, assets/img/muse-montpellier-tour-higher-roch-portrait-800.avif 800w, assets/img/muse-montpellier-tour-higher-roch-portrait-1200.avif 1200w" imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.remove('no-js')</script>
+<script src="assets/js/main.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Restaurant",
+      "@id": "https://musemontpellier.com/#restaurant",
+      "name": "MUSE",
+      "alternateName": "MUSE – Brasserie Bistronomique",
+      "description": "Brasserie bistronomique au rez-de-chaussée de la tour Higher Roch, quartier Nouveau Saint-Roch à Montpellier : cuisine de saison d’inspiration méditerranéenne, bar, coworking et privatisations.",
+      "url": "https://musemontpellier.com/",
+      "telephone": "+33467851773",
+      "email": "musemtp@gmail.com",
+      "logo": "https://musemontpellier.com/assets/brand/muse-logo.png",
+      "image": [
+        "https://musemontpellier.com/assets/img/muse-montpellier-tour-higher-roch-paysage-1600.jpg",
+        "https://musemontpellier.com/assets/img/muse-montpellier-salle-crepuscule-saint-roch-800.jpg",
+        "https://musemontpellier.com/assets/img/muse-montpellier-cuisine-ouverte-800.jpg"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 rue Alexandra David-Néel",
+        "addressLocality": "Montpellier",
+        "postalCode": "34000",
+        "addressRegion": "Occitanie",
+        "addressCountry": "FR"
+      },
+      "servesCuisine": ["Méditerranéenne", "Bistronomique"],
+      "priceRange": "€€",
+      "acceptsReservations": "https://foodcollect.fr/store/muse/reserver",
+      "hasMenu": "https://musemontpellier.com/#carte",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "07:00",
+          "closes": "00:00"
+        }
+      ],
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Terrasse", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Mezzanine privatisable", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Espace de travail et de rendez-vous", "value": true }
+      ],
+      "sameAs": ["https://www.instagram.com/musemontpellier/"],
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://foodcollect.fr/store/muse/reserver",
+          "inLanguage": "fr-FR",
+          "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+        },
+        "result": { "@type": "FoodEstablishmentReservation", "name": "Réserver une table" }
       }
-    </style>
-  </head>
-  <body
-    class="min-h-dvh bg-white text-neutral-900 antialiased dark:bg-neutral-950 dark:text-neutral-100"
-  >
-    <main
-      class="mx-auto flex min-h-dvh max-w-3xl flex-col justify-center gap-4 px-4 py-16"
-    >
-      <h1
-        class="text-4xl font-semibold tracking-tight text-balance sm:text-5xl"
-      >
-        Muse Montpellier
-      </h1>
-      <p class="text-lg text-neutral-600 dark:text-neutral-400">
-        Site en construction.
-      </p>
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://musemontpellier.com/#website",
+      "url": "https://musemontpellier.com/",
+      "name": "MUSE Montpellier",
+      "inLanguage": "fr-FR",
+      "publisher": { "@id": "https://musemontpellier.com/#restaurant" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="logo-muse" viewBox="32 378.5 355.7 84.7"><path fill="currentColor" d="M 67.761719 457.898438 L 59.773438 456.898438 L 59.773438 399.992188 L 65.597656 396.164062 C 67.816406 394.726562 70.230469 393.28125 72.835938 391.839844 C 75.441406 390.398438 78.132812 389.675781 80.90625 389.675781 C 84.34375 389.675781 86.898438 390.621094 88.5625 392.503906 C 90.222656 394.390625 91.058594 397.941406 91.058594 403.152344 L 91.058594 456.898438 L 83.238281 457.898438 L 83.238281 459.5625 L 115.183594 459.5625 L 115.183594 457.898438 L 107.195312 456.898438 L 107.195312 399.992188 L 113.023438 396.164062 C 115.238281 394.726562 117.679688 393.28125 120.34375 391.839844 C 123.003906 390.398438 125.667969 389.675781 128.328125 389.675781 C 131.765625 389.675781 134.320312 390.621094 135.984375 392.503906 C 137.648438 394.390625 138.480469 397.941406 138.480469 403.152344 L 138.480469 456.898438 L 130.660156 457.898438 L 130.660156 459.5625 L 166.601562 459.5625 L 166.601562 457.898438 L 154.785156 456.898438 L 154.785156 403.652344 C 154.785156 400.546875 154.703125 397.941406 154.535156 395.832031 C 154.371094 393.726562 154.0625 391.949219 153.621094 390.507812 C 153.175781 389.066406 152.648438 387.84375 152.042969 386.847656 C 151.429688 385.847656 150.625 384.851562 149.628906 383.851562 C 148.40625 382.632812 146.773438 381.605469 144.71875 380.773438 C 142.664062 379.941406 139.8125 379.523438 136.148438 379.523438 L 107.195312 398.164062 C 107.195312 394.058594 106.753906 391.035156 105.867188 389.09375 C 104.976562 387.152344 103.703125 385.40625 102.039062 383.851562 C 100.816406 382.632812 99.210938 381.605469 97.214844 380.773438 C 95.21875 379.941406 92.332031 379.523438 88.5625 379.523438 L 59.773438 398.164062 L 59.773438 380.355469 L 58.109375 380.355469 L 32.984375 386.679688 L 33.316406 388.179688 L 43.964844 385.847656 L 43.964844 456.898438 L 33.652344 457.898438 L 33.652344 459.5625 L 67.761719 459.5625 Z M 250.394531 454.238281 L 241.742188 455.070312 C 241.078125 452.296875 240.550781 449.636719 240.164062 447.082031 C 239.773438 444.53125 239.582031 441.535156 239.582031 438.097656 L 239.582031 380.855469 L 237.917969 380.855469 L 212.957031 385.351562 L 212.957031 387.011719 L 223.773438 385.683594 L 223.773438 442.421875 L 216.449219 446.75 C 213.566406 448.527344 211.125 449.886719 209.128906 450.824219 C 207.132812 451.769531 204.859375 452.242188 202.308594 452.242188 C 199.199219 452.242188 196.789062 451.1875 195.070312 449.078125 C 193.347656 446.972656 192.492188 443.421875 192.492188 438.429688 L 192.492188 380.855469 L 190.824219 380.855469 L 165.367188 385.351562 L 165.535156 387.011719 L 176.183594 385.683594 L 176.183594 437.597656 C 176.183594 440.703125 176.265625 443.335938 176.433594 445.5 C 176.601562 447.664062 176.902344 449.496094 177.347656 450.992188 C 177.789062 452.492188 178.347656 453.765625 179.011719 454.820312 C 179.679688 455.875 180.511719 456.898438 181.507812 457.898438 C 182.726562 459.007812 184.476562 459.980469 186.75 460.808594 C 189.023438 461.640625 191.933594 462.058594 195.484375 462.058594 L 223.9375 444.421875 L 226.769531 460.5625 L 250.730469 455.902344 Z M 307.71875 406.648438 L 309.382812 406.648438 L 309.382812 385.351562 C 306.277344 383.683594 302.835938 382.300781 299.066406 381.191406 C 295.292969 380.082031 290.632812 379.523438 285.089844 379.523438 C 276.4375 381.855469 269.890625 384.851562 265.457031 388.511719 C 261.015625 392.171875 258.796875 396.722656 258.796875 402.15625 C 258.796875 404.707031 259.1875 406.953125 259.960938 408.894531 C 260.738281 410.835938 261.765625 412.527344 263.042969 413.96875 C 264.316406 415.414062 265.757812 416.714844 267.367188 417.878906 C 268.976562 419.046875 270.554688 420.125 272.109375 421.125 L 285.753906 429.777344 C 288.085938 431.332031 290.105469 432.6875 291.828125 433.851562 C 293.546875 435.019531 294.933594 436.242188 295.988281 437.515625 C 297.039062 438.792969 297.84375 440.175781 298.402344 441.675781 C 298.953125 443.171875 299.234375 444.976562 299.234375 447.082031 C 299.234375 450.078125 298.09375 452.742188 295.820312 455.070312 C 293.546875 457.398438 290.023438 458.5625 285.253906 458.5625 C 281.816406 458.5625 278.851562 457.84375 276.351562 456.402344 C 273.859375 454.960938 271.445312 453.128906 269.113281 450.910156 L 260.296875 433.269531 L 258.632812 433.269531 L 258.632812 455.070312 C 261.847656 456.957031 265.789062 458.621094 270.445312 460.0625 C 275.105469 461.5 279.765625 462.226562 284.421875 462.226562 C 293.628906 460.003906 300.507812 456.761719 305.058594 452.492188 C 309.605469 448.222656 311.933594 443.253906 312.046875 437.597656 C 312.15625 433.382812 311.214844 429.777344 309.21875 426.78125 C 307.21875 423.789062 303.667969 420.738281 298.566406 417.628906 L 284.421875 408.644531 C 280.539062 406.207031 277.433594 403.960938 275.105469 401.90625 C 272.773438 399.855469 271.609375 397.054688 271.609375 393.503906 C 271.609375 390.285156 272.71875 387.652344 274.941406 385.597656 C 277.15625 383.546875 280.097656 382.519531 283.757812 382.519531 C 286.640625 382.519531 289.25 382.910156 291.578125 383.683594 C 293.90625 384.464844 296.347656 386.125 298.902344 388.675781 Z M 366.171875 458.148438 C 368.554688 456.875 370.855469 455.515625 373.078125 454.070312 C 375.296875 452.628906 377.488281 451.050781 379.648438 449.328125 C 381.8125 447.609375 384.167969 445.640625 386.722656 443.421875 L 385.722656 442.257812 C 382.503906 444.253906 379.207031 445.945312 375.824219 447.332031 C 372.4375 448.71875 368.859375 449.414062 365.089844 449.414062 C 360.875 449.414062 356.9375 448.664062 353.277344 447.164062 C 349.617188 445.667969 346.425781 443.421875 343.707031 440.425781 C 340.988281 437.429688 338.855469 433.746094 337.304688 429.359375 C 335.746094 424.980469 334.972656 419.960938 334.972656 414.304688 L 334.972656 414.136719 L 386.054688 414.136719 L 386.054688 409.476562 C 386.054688 400.269531 383.699219 392.976562 378.984375 387.59375 C 374.269531 382.214844 367.085938 379.523438 357.4375 379.523438 C 352.445312 380.636719 347.703125 382.355469 343.207031 384.683594 C 338.714844 387.011719 334.777344 390.007812 331.394531 393.667969 C 328.011719 397.328125 325.347656 401.683594 323.410156 406.730469 C 321.464844 411.78125 320.496094 417.519531 320.496094 423.953125 C 320.496094 430.167969 321.519531 435.628906 323.574219 440.34375 C 325.625 445.058594 328.402344 449.023438 331.894531 452.242188 C 335.390625 455.460938 339.40625 457.898438 343.957031 459.5625 C 348.503906 461.226562 353.277344 462.058594 358.269531 462.058594 C 361.152344 460.726562 363.785156 459.425781 366.171875 458.148438 M 360.929688 385.597656 C 362.925781 386.875 364.507812 388.652344 365.671875 390.921875 C 366.835938 393.199219 367.640625 395.914062 368.085938 399.078125 C 368.527344 402.238281 368.75 405.707031 368.75 409.476562 L 368.75 412.472656 L 334.972656 412.472656 C 335.191406 403.820312 336.71875 396.859375 339.550781 391.589844 C 342.378906 386.320312 346.894531 383.683594 353.109375 383.683594 C 356.324219 383.683594 358.933594 384.324219 360.929688 385.597656 "/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.4" cy="6.6" r=".9" fill="currentColor"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3.5 6 8.5 7 8.5-7"/></g></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z" fill="currentColor"/></symbol>
+</svg>
+
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<!-- ============ EN-TÊTE ============ -->
+<header class="site-header">
+  <div class="wrap site-header__bar">
+    <a class="site-header__logo" href="#top" aria-label="MUSE, retour en haut de page">
+      <svg viewBox="0 0 355.7 84.7" aria-hidden="true"><use href="#logo-muse"/></svg>
+    </a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#presentation">Présentation</a>
+      <a href="#infos">Infos pratiques</a>
+      <a href="#carte">La carte</a>
+      <a href="#lieu">Le lieu</a>
+      <a href="#coworking">Coworking</a>
+      <a href="#privatisation">Privatisation</a>
+    </nav>
+    <div class="site-header__actions">
+      <a class="icon-link" href="https://www.instagram.com/musemontpellier/" target="_blank" rel="noopener" aria-label="MUSE sur Instagram">
+        <svg width="20" height="20" aria-hidden="true"><use href="#i-instagram"/></svg>
+      </a>
+      <!-- À ajouter : lien Facebook (URL de la page à confirmer) -->
+      <a class="btn btn--dark btn--sm" href="https://foodcollect.fr/store/muse/reserver" target="_blank" rel="noopener">Réserver</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu">
+        <svg class="icon-open" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h16M4 15h16" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="menu-mobile" aria-label="Menu" hidden>
+    <a class="mobile-nav__item" href="#presentation"><span>Présentation</span><span>01</span></a>
+    <a class="mobile-nav__item" href="#infos"><span>Infos pratiques</span><span>02</span></a>
+    <a class="mobile-nav__item" href="#carte"><span>La carte</span><span>03</span></a>
+    <a class="mobile-nav__item" href="#lieu"><span>Le lieu</span><span>04</span></a>
+    <a class="mobile-nav__item" href="#coworking"><span>Coworking</span><span>05</span></a>
+    <a class="mobile-nav__item" href="#privatisation"><span>Privatisation</span><span>06</span></a>
+    <div class="mobile-nav__extra">
+      <a href="https://www.instagram.com/musemontpellier/" target="_blank" rel="noopener"><svg width="20" height="20" aria-hidden="true"><use href="#i-instagram"/></svg>Instagram</a>
+      <a href="tel:+33467851773">04&nbsp;67&nbsp;85&nbsp;17&nbsp;73</a>
+    </div>
+  </nav>
+</header>
+
+<main id="contenu">
+
+<!-- ============ ACCUEIL ============ -->
+<section class="hero wrap" id="top" aria-label="Accueil">
+  <h1 class="hero__title">
+    <svg viewBox="0 0 355.7 84.7" aria-hidden="true"><use href="#logo-muse"/></svg>
+    <span class="sr-only">MUSE, brasserie bistronomique à Montpellier</span>
+  </h1>
+  <div class="hero__row">
+    <div class="stack" style="gap:10px">
+      <p class="hero__tag">brasserie bistronomique</p>
+      <p class="meta">Higher Roch · Nouveau Saint-Roch · Ouvert 7j/7</p>
+    </div>
+    <div class="hero__aside">
+      <p class="hero__quote">« Un lieu de vie qui nous inspire pour manger autrement »</p>
+      <div class="btn-row">
+        <a class="btn btn--dark" href="https://foodcollect.fr/store/muse/reserver" target="_blank" rel="noopener">Réserver une table<svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn" href="#carte">Voir la carte</a>
+      </div>
+    </div>
+  </div>
+</section>
+<figure class="hero__media">
+  <picture>
+    <source media="(min-width: 900px)" type="image/avif" srcset="assets/img/muse-montpellier-tour-higher-roch-paysage-800.avif 800w, assets/img/muse-montpellier-tour-higher-roch-paysage-1200.avif 1200w, assets/img/muse-montpellier-tour-higher-roch-paysage-1600.avif 1600w, assets/img/muse-montpellier-tour-higher-roch-paysage-2320.avif 2320w" sizes="100vw">
+    <source media="(min-width: 900px)" type="image/webp" srcset="assets/img/muse-montpellier-tour-higher-roch-paysage-800.webp 800w, assets/img/muse-montpellier-tour-higher-roch-paysage-1200.webp 1200w, assets/img/muse-montpellier-tour-higher-roch-paysage-1600.webp 1600w, assets/img/muse-montpellier-tour-higher-roch-paysage-2320.webp 2320w" sizes="100vw">
+    <source media="(min-width: 900px)" srcset="assets/img/muse-montpellier-tour-higher-roch-paysage-1600.jpg">
+    <source type="image/avif" srcset="assets/img/muse-montpellier-tour-higher-roch-portrait-480.avif 480w, assets/img/muse-montpellier-tour-higher-roch-portrait-800.avif 800w, assets/img/muse-montpellier-tour-higher-roch-portrait-1200.avif 1200w" sizes="100vw">
+    <source type="image/webp" srcset="assets/img/muse-montpellier-tour-higher-roch-portrait-480.webp 480w, assets/img/muse-montpellier-tour-higher-roch-portrait-800.webp 800w, assets/img/muse-montpellier-tour-higher-roch-portrait-1200.webp 1200w" sizes="100vw">
+    <img src="assets/img/muse-montpellier-tour-higher-roch-portrait-800.jpg" width="800" height="1200" alt="La tour Higher Roch, dont MUSE occupe le rez-de-chaussée, dans le quartier Nouveau Saint-Roch à Montpellier" fetchpriority="high" decoding="async">
+  </picture>
+</figure>
+
+<div class="muses" aria-hidden="true">
+  <div class="muses__track">
+    <span><b>Calliope</b> muse de l’épopée et de la poésie héroïque · <b>Clio</b> muse de l’histoire · <b>Érato</b> muse de la poésie lyrique et de l’amour · <b>Euterpe</b> muse de la musique, de la flûte, du lyrisme · <b>Melpomène</b> muse de la tragédie · <b>Polymnie</b> muse des hymnes, de la rhétorique et de la poésie sacrée · <b>Terpsichore</b> muse de la danse et du chant choral · <b>Thalie</b> muse de la comédie et de la poésie bucolique · <b>Uranie</b> muse de l’astronomie · <b>Gastéréa</b> dixième muse ·</span>
+    <span><b>Calliope</b> muse de l’épopée et de la poésie héroïque · <b>Clio</b> muse de l’histoire · <b>Érato</b> muse de la poésie lyrique et de l’amour · <b>Euterpe</b> muse de la musique, de la flûte, du lyrisme · <b>Melpomène</b> muse de la tragédie · <b>Polymnie</b> muse des hymnes, de la rhétorique et de la poésie sacrée · <b>Terpsichore</b> muse de la danse et du chant choral · <b>Thalie</b> muse de la comédie et de la poésie bucolique · <b>Uranie</b> muse de l’astronomie · <b>Gastéréa</b> dixième muse ·</span>
+  </div>
+</div>
+
+<!-- ============ 01 PRÉSENTATION ============ -->
+<section id="presentation" aria-labelledby="titre-presentation">
+  <div class="wrap" style="padding-top:var(--section);padding-bottom:clamp(48px,6vw,80px)">
+    <p class="kicker"><span>01</span><span class="rule"></span><span>Présentation</span></p>
+    <div class="split">
+      <h2 class="h2" id="titre-presentation">Brasserie bistronomique à Montpellier</h2>
+      <div class="split__text stack" style="gap:20px">
+        <p class="lead">Installé au rez-de-chaussée de l’emblématique tour résidentielle <strong>Higher Roch</strong>, au cœur du quartier Nouveau Saint-Roch et à quelques pas de la gare Montpellier Saint-Roch, <strong>MUSE</strong> est une brasserie bistronomique pensée comme un véritable lieu de vie.</p>
+        <p>Du petit-déjeuner au dîner, MUSE évolue au fil de la journée : café le matin, table bistronomique le midi, espace de travail et de rendez-vous en journée, puis bar et restaurant convivial en soirée.</p>
+        <p>Plus qu’un restaurant, MUSE est un lieu vivant où se rencontrent <strong>cuisine, art, musique et convivialité</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider gallery" data-slider>
+    <div class="slider__track" role="region" aria-label="Assiettes de saison" tabindex="0">
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-assiette-saison-01-480.avif 480w, assets/img/muse-montpellier-assiette-saison-01-800.avif 800w, assets/img/muse-montpellier-assiette-saison-01-1000.avif 1000w" sizes="(min-width: 720px) 420px, 62vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-assiette-saison-01-480.webp 480w, assets/img/muse-montpellier-assiette-saison-01-800.webp 800w, assets/img/muse-montpellier-assiette-saison-01-1000.webp 1000w" sizes="(min-width: 720px) 420px, 62vw">
+          <img src="assets/img/muse-montpellier-assiette-saison-01-800.jpg" width="800" height="1000" alt="Assiette de saison dressée par la brigade de MUSE" loading="lazy" decoding="async">
+        </picture>
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-assiette-saison-02-480.avif 480w, assets/img/muse-montpellier-assiette-saison-02-800.avif 800w, assets/img/muse-montpellier-assiette-saison-02-1000.avif 1000w" sizes="(min-width: 720px) 420px, 62vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-assiette-saison-02-480.webp 480w, assets/img/muse-montpellier-assiette-saison-02-800.webp 800w, assets/img/muse-montpellier-assiette-saison-02-1000.webp 1000w" sizes="(min-width: 720px) 420px, 62vw">
+          <img src="assets/img/muse-montpellier-assiette-saison-02-800.jpg" width="800" height="1000" alt="Assiette de saison de MUSE, cuisine d’inspiration méditerranéenne" loading="lazy" decoding="async">
+        </picture>
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-assiette-saison-03-480.avif 480w, assets/img/muse-montpellier-assiette-saison-03-800.avif 800w, assets/img/muse-montpellier-assiette-saison-03-1000.avif 1000w" sizes="(min-width: 720px) 420px, 62vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-assiette-saison-03-480.webp 480w, assets/img/muse-montpellier-assiette-saison-03-800.webp 800w, assets/img/muse-montpellier-assiette-saison-03-1000.webp 1000w" sizes="(min-width: 720px) 420px, 62vw">
+          <img src="assets/img/muse-montpellier-assiette-saison-03-800.jpg" width="800" height="1000" alt="Assiette d’automne servie chez MUSE à Montpellier" loading="lazy" decoding="async">
+        </picture>
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-assiette-saison-04-480.avif 480w, assets/img/muse-montpellier-assiette-saison-04-800.avif 800w, assets/img/muse-montpellier-assiette-saison-04-1000.avif 1000w" sizes="(min-width: 720px) 420px, 62vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-assiette-saison-04-480.webp 480w, assets/img/muse-montpellier-assiette-saison-04-800.webp 800w, assets/img/muse-montpellier-assiette-saison-04-1000.webp 1000w" sizes="(min-width: 720px) 420px, 62vw">
+          <img src="assets/img/muse-montpellier-assiette-saison-04-800.jpg" width="800" height="1000" alt="Assiette de saison de MUSE, présentée dans un nid de foin" loading="lazy" decoding="async">
+        </picture>
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-assiette-saison-05-480.avif 480w, assets/img/muse-montpellier-assiette-saison-05-800.avif 800w, assets/img/muse-montpellier-assiette-saison-05-1000.avif 1000w" sizes="(min-width: 720px) 420px, 62vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-assiette-saison-05-480.webp 480w, assets/img/muse-montpellier-assiette-saison-05-800.webp 800w, assets/img/muse-montpellier-assiette-saison-05-1000.webp 1000w" sizes="(min-width: 720px) 420px, 62vw">
+          <img src="assets/img/muse-montpellier-assiette-saison-05-800.jpg" width="800" height="1000" alt="Dessert de saison servi chez MUSE" loading="lazy" decoding="async">
+        </picture>
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-assiette-saison-06-480.avif 480w, assets/img/muse-montpellier-assiette-saison-06-800.avif 800w, assets/img/muse-montpellier-assiette-saison-06-1000.avif 1000w" sizes="(min-width: 720px) 420px, 62vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-assiette-saison-06-480.webp 480w, assets/img/muse-montpellier-assiette-saison-06-800.webp 800w, assets/img/muse-montpellier-assiette-saison-06-1000.webp 1000w" sizes="(min-width: 720px) 420px, 62vw">
+          <img src="assets/img/muse-montpellier-assiette-saison-06-800.jpg" width="800" height="1000" alt="Plat de saison de MUSE, brasserie bistronomique à Montpellier" loading="lazy" decoding="async">
+        </picture>
+    </div>
+    <div class="wrap slider__nav">
+      <button class="round-btn" type="button" data-slide="prev" aria-label="Photos précédentes"><svg width="18" height="18" aria-hidden="true"><use href="#i-prev"/></svg></button>
+      <button class="round-btn" type="button" data-slide="next" aria-label="Photos suivantes"><svg width="18" height="18" aria-hidden="true"><use href="#i-next"/></svg></button>
+    </div>
+  </div>
+
+  <div class="wrap pt-section">
+    <div class="muse-block">
+      <h3 class="kicker">Muse</h3>
       <div>
-     
-    </main>
-  </body>
+        <p class="lead-xl">Dans la mythologie, les Muses incarnent les arts et l’inspiration. Au fil des siècles, le mot « muse » est devenu synonyme de <em>source d’inspiration</em>, qu’elle soit une personne, un lieu, une émotion ou une rencontre.</p>
+        <div class="two-cols">
+          <p>C’est autour de cette idée qu’est né MUSE : créer un lieu capable d’inspirer, de provoquer les rencontres et de donner envie de rester.</p>
+          <p>Un restaurant peut être plus qu’une table. Il peut devenir un lieu où l’on mange, où l’on échange, où l’on travaille, où l’on écoute de la musique, où l’on vient lire un livre et où l’on revient simplement parce que l’on s’y sent bien.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap pt-section">
+    <div class="split split--center" style="margin-top:0">
+      <figure class="concept-img">
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-cuisine-ouverte-480.avif 480w, assets/img/muse-montpellier-cuisine-ouverte-800.avif 800w, assets/img/muse-montpellier-cuisine-ouverte-1200.avif 1200w, assets/img/muse-montpellier-cuisine-ouverte-1600.avif 1600w" sizes="(min-width: 1000px) 45vw, 100vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-cuisine-ouverte-480.webp 480w, assets/img/muse-montpellier-cuisine-ouverte-800.webp 800w, assets/img/muse-montpellier-cuisine-ouverte-1200.webp 1200w, assets/img/muse-montpellier-cuisine-ouverte-1600.webp 1600w" sizes="(min-width: 1000px) 45vw, 100vw">
+          <img src="assets/img/muse-montpellier-cuisine-ouverte-800.jpg" width="800" height="640" alt="La cuisine ouverte de MUSE vue depuis la salle, en noir et blanc" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <div class="stack" style="max-width:620px">
+        <h3 class="kicker">Le concept</h3>
+        <p class="lead-l" style="margin-top:6px">Peut-on encore imaginer des utopies culinaires ? Des lieux où la cuisine, la créativité et la joie de vivre se rencontrent ?</p>
+        <p>Chez MUSE, le concept part d’une idée simple : <strong>revenir à l’essentiel de la culture française — bien manger et partager.</strong></p>
+        <p>Se retrouver entre amis, en famille ou entre collègues, faire des rencontres autour d’une table et, forcément, parler de ce que l’on mangera le lendemain.</p>
+        <p>MUSE s’inspire également de l’esprit des <strong>« folies montpelliéraines »</strong>, ces maisons de plaisance imaginées comme des lieux de liberté, de réception et d’évasion.</p>
+        <p>Dans cet esprit, la scénographie accompagne la cuisine : <strong>la cuisine devient la scène, le chef et sa brigade les interprètes, et le produit reste au centre de l’assiette.</strong></p>
+        <p>Notre territoire occitan et méditerranéen offre une richesse exceptionnelle de produits, de producteurs, de vins et de savoir-faire. MUSE souhaite les mettre en valeur à travers une cuisine contemporaine, accessible et en mouvement.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap pt-section" style="padding-bottom:var(--section)">
+    <div class="restaurant">
+      <div class="stack" style="gap:20px">
+        <h3 class="kicker">Le restaurant</h3>
+        <p class="h3-serif">La cuisine et la carte</p>
+        <p class="lead" style="font-size:clamp(19px,1.7vw,23px);line-height:1.45">Sous la direction du <strong>chef Raphaël Gerby</strong>, MUSE propose une cuisine de saison d’inspiration résolument <strong>méditerranéenne</strong>, élaborée à partir de produits frais avec une attention particulière portée aux circuits courts et aux producteurs.</p>
+        <p style="margin-top:8px"><a class="btn" href="#carte">Découvrir la carte</a></p>
+      </div>
+      <figure>
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-dressage-assiette-480.avif 480w, assets/img/muse-montpellier-dressage-assiette-800.avif 800w, assets/img/muse-montpellier-dressage-assiette-1200.avif 1200w" sizes="(min-width: 1000px) 540px, 100vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-dressage-assiette-480.webp 480w, assets/img/muse-montpellier-dressage-assiette-800.webp 800w, assets/img/muse-montpellier-dressage-assiette-1200.webp 1200w" sizes="(min-width: 1000px) 540px, 100vw">
+          <img src="assets/img/muse-montpellier-dressage-assiette-800.jpg" width="800" height="1000" alt="Dressage d’une assiette dans la cuisine de MUSE" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 INFOS PRATIQUES ============ -->
+<section class="section section--stone" id="infos" aria-labelledby="titre-infos">
+  <div class="wrap">
+    <p class="kicker"><span>02</span><span class="rule"></span><span>Infos pratiques</span></p>
+    <h2 class="h2" id="titre-infos" style="margin-top:32px">Infos pratiques</h2>
+    <div class="infos">
+      <div class="infos__main">
+        <div class="info-row">
+          <h3 class="kicker">Adresse</h3>
+          <div>
+            <address class="address">MUSE – Brasserie Bistronomique<br>Rez-de-chaussée de Higher Roch<br>123 rue Alexandra David-Néel<br>34000 Montpellier</address>
+            <p style="font-size:15px;line-height:1.6;color:var(--grey)">À quelques pas de la gare Montpellier Saint-Roch.</p>
+            <p><a class="text-link" href="https://share.google/rW8JSTQi1CLAcIaZ5" target="_blank" rel="noopener">Itinéraire<svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+          </div>
+        </div>
+        <div class="info-row">
+          <h3 class="kicker">Horaires</h3>
+          <div style="gap:18px">
+            <p class="address">Ouvert 7 jours sur 7</p>
+            <dl class="hours">
+              <div><dt><span class="small-caps-label">Le matin</span><span>Café &amp; petit-déjeuner</span></dt><dd>7h – 10h30</dd></div>
+              <div><dt><span class="small-caps-label">Le midi</span><span>Table bistronomique</span></dt><dd>12h – 14h</dd></div>
+              <div><dt><span class="small-caps-label">En journée</span><span>Travail &amp; rendez-vous</span></dt><dd>Service continu</dd></div>
+              <div><dt><span class="small-caps-label">Le soir</span><span>Bar &amp; restaurant</span></dt><dd>19h – 22h</dd></div>
+            </dl>
+          </div>
+        </div>
+        <div class="info-row">
+          <h3 class="kicker">Réservation</h3>
+          <div style="gap:16px">
+            <p>Réservations possibles directement auprès du restaurant ou en ligne.</p>
+            <div class="btn-row">
+              <a class="btn btn--dark" href="https://foodcollect.fr/store/muse/reserver" target="_blank" rel="noopener">Réserver en ligne<svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="btn" href="tel:+33467851773"><svg width="16" height="16" aria-hidden="true"><use href="#i-phone"/></svg>04&nbsp;67&nbsp;85&nbsp;17&nbsp;73</a>
+            </div>
+          </div>
+        </div>
+        <div class="info-row">
+          <h3 class="kicker">Suivre MUSE</h3>
+          <div class="social">
+            <a href="https://www.instagram.com/musemontpellier/" target="_blank" rel="noopener"><svg width="22" height="22" aria-hidden="true"><use href="#i-instagram"/></svg>@musemontpellier</a>
+            <!-- À ajouter : lien Facebook « MUSE Montpellier » (URL de la page à confirmer) -->
+          </div>
+        </div>
+      </div>
+      <div class="infos__side">
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-salle-crepuscule-saint-roch-480.avif 480w, assets/img/muse-montpellier-salle-crepuscule-saint-roch-800.avif 800w, assets/img/muse-montpellier-salle-crepuscule-saint-roch-1200.avif 1200w" sizes="(min-width: 1000px) 480px, 100vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-salle-crepuscule-saint-roch-480.webp 480w, assets/img/muse-montpellier-salle-crepuscule-saint-roch-800.webp 800w, assets/img/muse-montpellier-salle-crepuscule-saint-roch-1200.webp 1200w" sizes="(min-width: 1000px) 480px, 100vw">
+          <img src="assets/img/muse-montpellier-salle-crepuscule-saint-roch-800.jpg" width="800" height="1000" alt="La salle de MUSE au crépuscule, plantes et baies vitrées ouvertes sur le quartier Saint-Roch" loading="lazy" decoding="async">
+        </picture>
+        <a class="rating" href="https://share.google/rW8JSTQi1CLAcIaZ5" target="_blank" rel="noopener">
+          <span class="rating__score">
+            <span class="rating__value">4,8</span>
+            <span>
+              <span class="rating__stars" aria-hidden="true"><svg width="16" height="16"><use href="#i-star"/></svg><svg width="16" height="16"><use href="#i-star"/></svg><svg width="16" height="16"><use href="#i-star"/></svg><svg width="16" height="16"><use href="#i-star"/></svg><svg width="16" height="16"><use href="#i-star"/></svg></span>
+              <span class="rating__count" style="display:block">163 avis Google</span>
+            </span>
+          </span>
+          <span class="rating__cta">Lire les avis<svg width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GASTÉRÉA ============ -->
+<section class="gasterea" aria-label="Gastéréa, dixième muse">
+  <blockquote>
+    <p class="gasterea__name">GASTÉRÉA</p>
+    <p class="gasterea__line">DIXIÈME MUSE<br>ELLE PRÉSIDE AUX<br>JOUISSANCES<br>DU GOÛT</p>
+  </blockquote>
+  <p class="gasterea__author">Jean Anthelme Brillat-Savarin</p>
+  <p class="gasterea__book"><cite><em>Physiologie du goût</em></cite> (1825)</p>
+</section>
+
+<!-- ============ 03 LA CARTE ============ -->
+<section class="section" id="carte" aria-labelledby="titre-carte">
+  <div class="wrap">
+    <p class="kicker"><span>03</span><span class="rule"></span><span>La carte</span></p>
+    <div class="carte-head">
+      <h2 class="h2" id="titre-carte">La carte</h2>
+      <p class="meta">Carte de saison · septembre – octobre 2026</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Choisir une carte">
+      <button class="tab" type="button" role="tab" id="tab-midi" aria-controls="panel-midi" aria-selected="true">Midi</button>
+      <button class="tab" type="button" role="tab" id="tab-soir" aria-controls="panel-soir" aria-selected="false" tabindex="-1">Soir</button>
+      <button class="tab" type="button" role="tab" id="tab-boissons" aria-controls="panel-boissons" aria-selected="false" tabindex="-1">Boissons</button>
+      <button class="tab" type="button" role="tab" id="tab-vins" aria-controls="panel-vins" aria-selected="false" tabindex="-1">Vins</button>
+    </div>
+
+    <div class="panel" id="panel-midi" role="tabpanel" aria-labelledby="tab-midi">
+      <div class="panel__text">
+        <div class="panel__title"><h3>Le midi</h3><span>12h – 14h</span></div>
+        <p>Le déjeuner est pensé dans un esprit de <strong>brasserie bistronomique</strong> : une cuisine soignée, créative et accessible.</p>
+        <p>L’ardoise évolue très régulièrement au gré des saisons et des arrivages. Une suggestion vient également compléter la carte chaque semaine afin de laisser une place à l’inspiration du chef et aux produits du moment.</p>
+        <p style="margin-top:6px"><a class="btn" href="assets/pdf/muse-montpellier-carte-midi-soir.pdf" target="_blank" rel="noopener">Carte midi &amp; soir · PDF</a></p>
+      </div>
+      <div class="panel__slider slider" data-slider>
+        <div class="slider__track">
+          <a class="page-btn" href="assets/carte/muse-montpellier-carte-midi-1600.webp" data-zoom="assets/carte/muse-montpellier-carte-midi-1600.webp" data-title="Carte du midi">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-carte-midi-600.avif 600w, assets/carte/muse-montpellier-carte-midi-1000.avif 1000w, assets/carte/muse-montpellier-carte-midi-1600.avif 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-carte-midi-600.webp 600w, assets/carte/muse-montpellier-carte-midi-1000.webp 1000w, assets/carte/muse-montpellier-carte-midi-1600.webp 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-carte-midi-1000.jpg" width="1000" height="1414" alt="Carte du midi de MUSE : formule petit-déjeuner, formule midi, entrées, plats et desserts de saison" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn page-btn--photo" href="assets/img/muse-montpellier-assiette-saison-07-800.webp" data-zoom="assets/img/muse-montpellier-assiette-saison-07-800.webp" data-title="Assiette de saison">
+            <picture>
+              <source type="image/avif" srcset="assets/img/muse-montpellier-assiette-saison-07-480.avif 480w, assets/img/muse-montpellier-assiette-saison-07-800.avif 800w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/img/muse-montpellier-assiette-saison-07-480.webp 480w, assets/img/muse-montpellier-assiette-saison-07-800.webp 800w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/img/muse-montpellier-assiette-saison-07-800.jpg" width="800" height="1132" alt="Assiette de saison servie chez MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+        </div>
+        <div class="slider__foot">
+          <p>Faites défiler, touchez une page pour l’agrandir.</p>
+          <div class="slider__nav" style="margin:0"><button class="round-btn" type="button" data-slide="prev" aria-label="Pages précédentes"><svg width="18" height="18" aria-hidden="true"><use href="#i-prev"/></svg></button><button class="round-btn" type="button" data-slide="next" aria-label="Pages suivantes"><svg width="18" height="18" aria-hidden="true"><use href="#i-next"/></svg></button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-soir" role="tabpanel" aria-labelledby="tab-soir">
+      <div class="panel__text">
+        <div class="panel__title"><h3>Le soir</h3><span>19h – 22h</span></div>
+        <p>À la tombée de la journée, MUSE change de rythme.</p>
+        <p>La carte laisse davantage de place à la convivialité, avec des <strong>assiettes à partager</strong> et une cuisine pensée pour accompagner un verre, un dîner ou une soirée entre amis.</p>
+        <p>La carte évolue régulièrement afin de suivre les saisons et de conserver cette liberté créative qui fait partie de l’identité de MUSE.</p>
+        <p style="margin-top:6px"><a class="btn" href="assets/pdf/muse-montpellier-carte-midi-soir.pdf" target="_blank" rel="noopener">Carte midi &amp; soir · PDF</a></p>
+      </div>
+      <div class="panel__slider slider" data-slider>
+        <div class="slider__track">
+          <a class="page-btn" href="assets/carte/muse-montpellier-carte-soir-1600.webp" data-zoom="assets/carte/muse-montpellier-carte-soir-1600.webp" data-title="Carte du soir">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-carte-soir-600.avif 600w, assets/carte/muse-montpellier-carte-soir-1000.avif 1000w, assets/carte/muse-montpellier-carte-soir-1600.avif 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-carte-soir-600.webp 600w, assets/carte/muse-montpellier-carte-soir-1000.webp 1000w, assets/carte/muse-montpellier-carte-soir-1600.webp 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-carte-soir-1000.jpg" width="1000" height="1414" alt="Carte du soir de MUSE : assiettes à partager, huîtres Gillardeau et Bouzigues, tartinables et desserts" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn page-btn--photo" href="assets/img/muse-montpellier-assiette-saison-08-800.webp" data-zoom="assets/img/muse-montpellier-assiette-saison-08-800.webp" data-title="Assiette de saison">
+            <picture>
+              <source type="image/avif" srcset="assets/img/muse-montpellier-assiette-saison-08-480.avif 480w, assets/img/muse-montpellier-assiette-saison-08-800.avif 800w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/img/muse-montpellier-assiette-saison-08-480.webp 480w, assets/img/muse-montpellier-assiette-saison-08-800.webp 800w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/img/muse-montpellier-assiette-saison-08-800.jpg" width="800" height="1132" alt="Assiette à partager servie le soir chez MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+        </div>
+        <div class="slider__foot">
+          <p>Faites défiler, touchez une page pour l’agrandir.</p>
+          <div class="slider__nav" style="margin:0"><button class="round-btn" type="button" data-slide="prev" aria-label="Pages précédentes"><svg width="18" height="18" aria-hidden="true"><use href="#i-prev"/></svg></button><button class="round-btn" type="button" data-slide="next" aria-label="Pages suivantes"><svg width="18" height="18" aria-hidden="true"><use href="#i-next"/></svg></button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-boissons" role="tabpanel" aria-labelledby="tab-boissons">
+      <div class="panel__text">
+        <div class="panel__title"><h3>Le bar</h3><span>Du matin au soir</span></div>
+        <p>Le bar occupe une place centrale dans la vie de MUSE.</p>
+        <p>Dès le matin, il accompagne les premiers cafés et les petits-déjeuners. Au fil de la journée, il devient un lieu de rendez-vous, avant de prendre une dimension plus festive en fin de journée et en soirée.</p>
+        <p>La carte fait la part belle aux <strong>cocktails, vins soigneusement sélectionnés et boissons travaillées</strong>, avec une volonté de créer des accords entre le verre et l’assiette.</p>
+        <p>On vient au bar de MUSE pour prendre un verre après le travail, partager quelques assiettes, commencer ou prolonger un dîner, retrouver des amis ou simplement profiter de l’atmosphère du lieu.</p>
+        <p>Des <strong>afterworks, soirées musicales et DJ sets</strong> viennent régulièrement rythmer la vie de MUSE.</p>
+        <div class="btn-row" style="margin-top:6px">
+          <a class="btn" href="assets/pdf/muse-montpellier-carte-boissons.pdf" target="_blank" rel="noopener">Boissons · PDF</a>
+          <a class="btn" href="assets/pdf/muse-montpellier-boissons-chaudes.pdf" target="_blank" rel="noopener">Boissons chaudes · PDF</a>
+        </div>
+      </div>
+      <div class="panel__slider slider" data-slider>
+        <div class="slider__track">
+          <a class="page-btn" href="assets/carte/muse-montpellier-boissons-chaudes-softs-1600.webp" data-zoom="assets/carte/muse-montpellier-boissons-chaudes-softs-1600.webp" data-title="Softs et boissons chaudes">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-boissons-chaudes-softs-600.avif 600w, assets/carte/muse-montpellier-boissons-chaudes-softs-1000.avif 1000w, assets/carte/muse-montpellier-boissons-chaudes-softs-1600.avif 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-boissons-chaudes-softs-600.webp 600w, assets/carte/muse-montpellier-boissons-chaudes-softs-1000.webp 1000w, assets/carte/muse-montpellier-boissons-chaudes-softs-1600.webp 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-boissons-chaudes-softs-1000.jpg" width="1000" height="1419" alt="Carte des boissons chaudes et softs de MUSE : cafés, thés, chocolat, jus et citronnade maison" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn" href="assets/carte/muse-montpellier-boissons-softs-bieres-1600.webp" data-zoom="assets/carte/muse-montpellier-boissons-softs-bieres-1600.webp" data-title="Softs et bières">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-boissons-softs-bieres-600.avif 600w, assets/carte/muse-montpellier-boissons-softs-bieres-1000.avif 1000w, assets/carte/muse-montpellier-boissons-softs-bieres-1600.avif 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-boissons-softs-bieres-600.webp 600w, assets/carte/muse-montpellier-boissons-softs-bieres-1000.webp 1000w, assets/carte/muse-montpellier-boissons-softs-bieres-1600.webp 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-boissons-softs-bieres-1000.jpg" width="1000" height="1419" alt="Carte des softs et bières pression artisanales bio de MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn" href="assets/carte/muse-montpellier-boissons-spritz-aperitifs-1600.webp" data-zoom="assets/carte/muse-montpellier-boissons-spritz-aperitifs-1600.webp" data-title="Spritz, apéritifs et saké">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-boissons-spritz-aperitifs-600.avif 600w, assets/carte/muse-montpellier-boissons-spritz-aperitifs-1000.avif 1000w, assets/carte/muse-montpellier-boissons-spritz-aperitifs-1600.avif 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-boissons-spritz-aperitifs-600.webp 600w, assets/carte/muse-montpellier-boissons-spritz-aperitifs-1000.webp 1000w, assets/carte/muse-montpellier-boissons-spritz-aperitifs-1600.webp 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-boissons-spritz-aperitifs-1000.jpg" width="1000" height="1419" alt="Carte des spritz, apéritifs et saké de MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn" href="assets/carte/muse-montpellier-boissons-cocktails-alcools-1600.webp" data-zoom="assets/carte/muse-montpellier-boissons-cocktails-alcools-1600.webp" data-title="Cocktails et alcools">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-boissons-cocktails-alcools-600.avif 600w, assets/carte/muse-montpellier-boissons-cocktails-alcools-1000.avif 1000w, assets/carte/muse-montpellier-boissons-cocktails-alcools-1600.avif 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-boissons-cocktails-alcools-600.webp 600w, assets/carte/muse-montpellier-boissons-cocktails-alcools-1000.webp 1000w, assets/carte/muse-montpellier-boissons-cocktails-alcools-1600.webp 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-boissons-cocktails-alcools-1000.jpg" width="1000" height="1419" alt="Carte des cocktails et alcools de MUSE : mojito, caïpirinha, gin tonic, margarita, espresso martini" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn" href="assets/carte/muse-montpellier-boissons-rhums-1600.webp" data-zoom="assets/carte/muse-montpellier-boissons-rhums-1600.webp" data-title="Les rhums">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-boissons-rhums-600.avif 600w, assets/carte/muse-montpellier-boissons-rhums-1000.avif 1000w, assets/carte/muse-montpellier-boissons-rhums-1600.avif 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-boissons-rhums-600.webp 600w, assets/carte/muse-montpellier-boissons-rhums-1000.webp 1000w, assets/carte/muse-montpellier-boissons-rhums-1600.webp 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-boissons-rhums-1000.jpg" width="1000" height="1419" alt="Carte des rhums de MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn" href="assets/carte/muse-montpellier-boissons-whiskies-gins-1600.webp" data-zoom="assets/carte/muse-montpellier-boissons-whiskies-gins-1600.webp" data-title="Whiskies et gins">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-boissons-whiskies-gins-600.avif 600w, assets/carte/muse-montpellier-boissons-whiskies-gins-1000.avif 1000w, assets/carte/muse-montpellier-boissons-whiskies-gins-1600.avif 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-boissons-whiskies-gins-600.webp 600w, assets/carte/muse-montpellier-boissons-whiskies-gins-1000.webp 1000w, assets/carte/muse-montpellier-boissons-whiskies-gins-1600.webp 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-boissons-whiskies-gins-1000.jpg" width="1000" height="1419" alt="Carte des whiskies et gins de MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn" href="assets/carte/muse-montpellier-boissons-vodkas-tequilas-mezcals-1600.webp" data-zoom="assets/carte/muse-montpellier-boissons-vodkas-tequilas-mezcals-1600.webp" data-title="Vodkas, tequilas, mezcals et digestifs">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-boissons-vodkas-tequilas-mezcals-600.avif 600w, assets/carte/muse-montpellier-boissons-vodkas-tequilas-mezcals-1000.avif 1000w, assets/carte/muse-montpellier-boissons-vodkas-tequilas-mezcals-1600.avif 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-boissons-vodkas-tequilas-mezcals-600.webp 600w, assets/carte/muse-montpellier-boissons-vodkas-tequilas-mezcals-1000.webp 1000w, assets/carte/muse-montpellier-boissons-vodkas-tequilas-mezcals-1600.webp 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-boissons-vodkas-tequilas-mezcals-1000.jpg" width="1000" height="1419" alt="Carte des vodkas, tequilas, mezcals et digestifs de MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+        </div>
+        <div class="slider__foot">
+          <p>Faites défiler, touchez une page pour l’agrandir.</p>
+          <div class="slider__nav" style="margin:0"><button class="round-btn" type="button" data-slide="prev" aria-label="Pages précédentes"><svg width="18" height="18" aria-hidden="true"><use href="#i-prev"/></svg></button><button class="round-btn" type="button" data-slide="next" aria-label="Pages suivantes"><svg width="18" height="18" aria-hidden="true"><use href="#i-next"/></svg></button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-vins" role="tabpanel" aria-labelledby="tab-vins">
+      <div class="panel__text">
+        <div class="panel__title"><h3>Les vins</h3><span>Au verre &amp; à la bouteille</span></div>
+        <p>Au verre, rouges, blancs, rosés, vin orange et champagnes.</p>
+        <p style="color:var(--grey)">Languedoc · Vallée du Rhône · Bourgogne · Loire · Roussillon · Espagne · Champagne</p>
+        <p style="margin-top:6px"><a class="btn" href="assets/pdf/muse-montpellier-carte-des-vins.pdf" target="_blank" rel="noopener">Carte des vins · PDF</a></p>
+      </div>
+      <div class="panel__slider slider" data-slider>
+        <div class="slider__track">
+          <a class="page-btn" href="assets/carte/muse-montpellier-vins-au-verre-1600.webp" data-zoom="assets/carte/muse-montpellier-vins-au-verre-1600.webp" data-title="Vins au verre">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-vins-au-verre-600.avif 600w, assets/carte/muse-montpellier-vins-au-verre-1000.avif 1000w, assets/carte/muse-montpellier-vins-au-verre-1600.avif 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-vins-au-verre-600.webp 600w, assets/carte/muse-montpellier-vins-au-verre-1000.webp 1000w, assets/carte/muse-montpellier-vins-au-verre-1600.webp 1399w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-vins-au-verre-1000.jpg" width="1000" height="1419" alt="Carte des vins au verre de MUSE : blancs, rouges, rosés et prosecco" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn" href="assets/carte/muse-montpellier-vins-rouges-languedoc-1600.webp" data-zoom="assets/carte/muse-montpellier-vins-rouges-languedoc-1600.webp" data-title="Vins rouges · Languedoc">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-vins-rouges-languedoc-600.avif 600w, assets/carte/muse-montpellier-vins-rouges-languedoc-1000.avif 1000w, assets/carte/muse-montpellier-vins-rouges-languedoc-1600.avif 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-vins-rouges-languedoc-600.webp 600w, assets/carte/muse-montpellier-vins-rouges-languedoc-1000.webp 1000w, assets/carte/muse-montpellier-vins-rouges-languedoc-1600.webp 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-vins-rouges-languedoc-1000.jpg" width="1000" height="1414" alt="Carte des vins rouges du Languedoc de MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn" href="assets/carte/muse-montpellier-vins-rouges-rhone-bourgogne-loire-1600.webp" data-zoom="assets/carte/muse-montpellier-vins-rouges-rhone-bourgogne-loire-1600.webp" data-title="Vins rouges · Rhône, Bourgogne, Loire">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-vins-rouges-rhone-bourgogne-loire-600.avif 600w, assets/carte/muse-montpellier-vins-rouges-rhone-bourgogne-loire-1000.avif 1000w, assets/carte/muse-montpellier-vins-rouges-rhone-bourgogne-loire-1600.avif 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-vins-rouges-rhone-bourgogne-loire-600.webp 600w, assets/carte/muse-montpellier-vins-rouges-rhone-bourgogne-loire-1000.webp 1000w, assets/carte/muse-montpellier-vins-rouges-rhone-bourgogne-loire-1600.webp 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-vins-rouges-rhone-bourgogne-loire-1000.jpg" width="1000" height="1414" alt="Carte des vins rouges de la Vallée du Rhône, de Bourgogne et de Loire de MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn" href="assets/carte/muse-montpellier-vins-rouges-roussillon-espagne-1600.webp" data-zoom="assets/carte/muse-montpellier-vins-rouges-roussillon-espagne-1600.webp" data-title="Vins rouges · Roussillon, Espagne">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-vins-rouges-roussillon-espagne-600.avif 600w, assets/carte/muse-montpellier-vins-rouges-roussillon-espagne-1000.avif 1000w, assets/carte/muse-montpellier-vins-rouges-roussillon-espagne-1600.avif 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-vins-rouges-roussillon-espagne-600.webp 600w, assets/carte/muse-montpellier-vins-rouges-roussillon-espagne-1000.webp 1000w, assets/carte/muse-montpellier-vins-rouges-roussillon-espagne-1600.webp 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-vins-rouges-roussillon-espagne-1000.jpg" width="1000" height="1414" alt="Carte des vins rouges du Roussillon et d’Espagne de MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn" href="assets/carte/muse-montpellier-vins-blancs-languedoc-bourgogne-1600.webp" data-zoom="assets/carte/muse-montpellier-vins-blancs-languedoc-bourgogne-1600.webp" data-title="Vins blancs · Languedoc, Bourgogne">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-vins-blancs-languedoc-bourgogne-600.avif 600w, assets/carte/muse-montpellier-vins-blancs-languedoc-bourgogne-1000.avif 1000w, assets/carte/muse-montpellier-vins-blancs-languedoc-bourgogne-1600.avif 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-vins-blancs-languedoc-bourgogne-600.webp 600w, assets/carte/muse-montpellier-vins-blancs-languedoc-bourgogne-1000.webp 1000w, assets/carte/muse-montpellier-vins-blancs-languedoc-bourgogne-1600.webp 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-vins-blancs-languedoc-bourgogne-1000.jpg" width="1000" height="1414" alt="Carte des vins blancs du Languedoc et de Bourgogne de MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn" href="assets/carte/muse-montpellier-vins-blancs-loire-roussillon-espagne-1600.webp" data-zoom="assets/carte/muse-montpellier-vins-blancs-loire-roussillon-espagne-1600.webp" data-title="Vins blancs · Loire, Roussillon, Espagne">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-vins-blancs-loire-roussillon-espagne-600.avif 600w, assets/carte/muse-montpellier-vins-blancs-loire-roussillon-espagne-1000.avif 1000w, assets/carte/muse-montpellier-vins-blancs-loire-roussillon-espagne-1600.avif 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-vins-blancs-loire-roussillon-espagne-600.webp 600w, assets/carte/muse-montpellier-vins-blancs-loire-roussillon-espagne-1000.webp 1000w, assets/carte/muse-montpellier-vins-blancs-loire-roussillon-espagne-1600.webp 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-vins-blancs-loire-roussillon-espagne-1000.jpg" width="1000" height="1414" alt="Carte des vins blancs de Loire, du Roussillon et de Catalogne de MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn" href="assets/carte/muse-montpellier-vins-roses-orange-1600.webp" data-zoom="assets/carte/muse-montpellier-vins-roses-orange-1600.webp" data-title="Vins rosés et vin orange">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-vins-roses-orange-600.avif 600w, assets/carte/muse-montpellier-vins-roses-orange-1000.avif 1000w, assets/carte/muse-montpellier-vins-roses-orange-1600.avif 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-vins-roses-orange-600.webp 600w, assets/carte/muse-montpellier-vins-roses-orange-1000.webp 1000w, assets/carte/muse-montpellier-vins-roses-orange-1600.webp 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-vins-roses-orange-1000.jpg" width="1000" height="1414" alt="Carte des vins rosés et du vin orange de MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+          <a class="page-btn" href="assets/carte/muse-montpellier-champagnes-1600.webp" data-zoom="assets/carte/muse-montpellier-champagnes-1600.webp" data-title="Champagnes">
+            <picture>
+              <source type="image/avif" srcset="assets/carte/muse-montpellier-champagnes-600.avif 600w, assets/carte/muse-montpellier-champagnes-1000.avif 1000w, assets/carte/muse-montpellier-champagnes-1600.avif 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <source type="image/webp" srcset="assets/carte/muse-montpellier-champagnes-600.webp 600w, assets/carte/muse-montpellier-champagnes-1000.webp 1000w, assets/carte/muse-montpellier-champagnes-1600.webp 1600w" sizes="(min-width: 720px) 380px, 74vw">
+              <img src="assets/carte/muse-montpellier-champagnes-1000.jpg" width="1000" height="1414" alt="Carte des champagnes de MUSE" loading="lazy" decoding="async">
+            </picture>
+          </a>
+        </div>
+        <div class="slider__foot">
+          <p>Faites défiler, touchez une page pour l’agrandir.</p>
+          <div class="slider__nav" style="margin:0"><button class="round-btn" type="button" data-slide="prev" aria-label="Pages précédentes"><svg width="18" height="18" aria-hidden="true"><use href="#i-prev"/></svg></button><button class="round-btn" type="button" data-slide="next" aria-label="Pages suivantes"><svg width="18" height="18" aria-hidden="true"><use href="#i-next"/></svg></button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 LE LIEU ============ -->
+<section class="section section--top-line" id="lieu" aria-labelledby="titre-lieu">
+  <div class="wrap">
+    <p class="kicker"><span>04</span><span class="rule"></span><span>Le lieu</span></p>
+    <div class="split">
+      <h2 class="h2" id="titre-lieu">Le lieu</h2>
+      <div class="split__text stack">
+        <p class="lead">MUSE s’étend sur environ <strong>230 m²</strong> et a été imaginé comme un espace vivant, chaleureux et singulier.</p>
+        <p>Le décor, conçu notamment avec le scénographe <strong>Christophe Goutes</strong>, s’articule autour d’une <strong>cuisine ouverte</strong>, véritable cœur du restaurant.</p>
+        <p>Grandes plantes vertes, bananier spectaculaire, tables en séquoia, matières naturelles et touches de mobilier coloré composent un univers à la fois chaleureux, graphique, contemporain et légèrement décalé.</p>
+        <p>La musique participe pleinement à l’identité du lieu, avec une ambiance notamment inspirée du jazz et une programmation qui peut évoluer au fil des soirées.</p>
+        <p>MUSE dispose également d’une <strong>mezzanine pensée comme un espace artistique et modulable</strong>, ainsi que d’une terrasse extérieure permettant de profiter pleinement de la vie du quartier Saint-Roch.</p>
+      </div>
+    </div>
+    <dl class="facts">
+      <div><dt class="facts__big">230 m²</dt><dd>Environ, pensés comme un espace vivant</dd></div>
+      <div><dt>Cuisine ouverte</dt><dd>Véritable cœur du restaurant</dd></div>
+      <div><dt>Mezzanine</dt><dd>Espace artistique et modulable</dd></div>
+      <div><dt>Terrasse</dt><dd>Sur la vie du quartier Saint-Roch</dd></div>
+    </dl>
+    <div class="mosaic">
+      <figure class="mosaic__tall">
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-salle-plantes-bananier-480.avif 480w, assets/img/muse-montpellier-salle-plantes-bananier-800.avif 800w, assets/img/muse-montpellier-salle-plantes-bananier-1200.avif 1200w" sizes="(min-width: 760px) 50vw, 100vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-salle-plantes-bananier-480.webp 480w, assets/img/muse-montpellier-salle-plantes-bananier-800.webp 800w, assets/img/muse-montpellier-salle-plantes-bananier-1200.webp 1200w" sizes="(min-width: 760px) 50vw, 100vw">
+          <img src="assets/img/muse-montpellier-salle-plantes-bananier-800.jpg" width="800" height="1000" alt="Plantes, bananier et mobilier coloré dans la salle de MUSE" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <figure class="mosaic__std">
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-salle-tables-sequoia-480.avif 480w, assets/img/muse-montpellier-salle-tables-sequoia-800.avif 800w, assets/img/muse-montpellier-salle-tables-sequoia-1200.avif 1200w" sizes="(min-width: 760px) 50vw, 100vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-salle-tables-sequoia-480.webp 480w, assets/img/muse-montpellier-salle-tables-sequoia-800.webp 800w, assets/img/muse-montpellier-salle-tables-sequoia-1200.webp 1200w" sizes="(min-width: 760px) 50vw, 100vw">
+          <img src="assets/img/muse-montpellier-salle-tables-sequoia-800.jpg" width="800" height="640" alt="La salle de MUSE, tables en séquoia et billard" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <figure class="mosaic__std">
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-brigade-en-cuisine-480.avif 480w, assets/img/muse-montpellier-brigade-en-cuisine-800.avif 800w, assets/img/muse-montpellier-brigade-en-cuisine-1200.avif 1200w" sizes="(min-width: 760px) 50vw, 100vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-brigade-en-cuisine-480.webp 480w, assets/img/muse-montpellier-brigade-en-cuisine-800.webp 800w, assets/img/muse-montpellier-brigade-en-cuisine-1200.webp 1200w" sizes="(min-width: 760px) 50vw, 100vw">
+          <img src="assets/img/muse-montpellier-brigade-en-cuisine-800.jpg" width="800" height="640" alt="La brigade de MUSE en cuisine, en noir et blanc" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 COWORKING ============ -->
+<section class="section section--stone" id="coworking" aria-labelledby="titre-coworking">
+  <div class="wrap">
+    <p class="kicker"><span>05</span><span class="rule"></span><span>Coworking</span></p>
+    <div class="cowork">
+      <div class="stack">
+        <h2 class="h2" id="titre-coworking" style="margin-bottom:8px">Coworking &amp; rendez-vous</h2>
+        <p class="lead">Parce que MUSE est pensé comme un lieu de vie et pas uniquement comme un restaurant, l’établissement accueille également celles et ceux qui souhaitent <strong>travailler, organiser un rendez-vous ou simplement s’installer quelques heures dans un cadre agréable</strong>.</p>
+        <p>Entre les services, les différents espaces du restaurant permettent de travailler seul, de recevoir un client ou d’organiser une réunion informelle tout en profitant du café, du bar et de la restauration.</p>
+        <p>La proximité immédiate de la <strong>gare Montpellier Saint-Roch</strong> en fait également un point de rendez-vous particulièrement pratique pour les professionnels de passage à Montpellier.</p>
+        <p>Pour les besoins plus importants, certains espaces peuvent être réservés ou privatisés.</p>
+        <div class="btn-row" style="margin-top:8px">
+          <a class="btn btn--dark" href="tel:+33467851773">Nous appeler</a>
+          <a class="btn" href="#privatisation">Réserver un espace</a>
+        </div>
+      </div>
+      <div>
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-bar-grandes-tables-480.avif 480w, assets/img/muse-montpellier-bar-grandes-tables-800.avif 800w, assets/img/muse-montpellier-bar-grandes-tables-1200.avif 1200w" sizes="(min-width: 1000px) 45vw, 100vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-bar-grandes-tables-480.webp 480w, assets/img/muse-montpellier-bar-grandes-tables-800.webp 800w, assets/img/muse-montpellier-bar-grandes-tables-1200.webp 1200w" sizes="(min-width: 1000px) 45vw, 100vw">
+          <img src="assets/img/muse-montpellier-bar-grandes-tables-800.jpg" width="800" height="640" alt="Grandes tables et bar de MUSE en journée, pour travailler ou se donner rendez-vous" loading="lazy" decoding="async">
+        </picture>
+        <ul class="numbered">
+          <li><span>I</span><span>Travailler seul</span></li>
+          <li><span>II</span><span>Recevoir un client</span></li>
+          <li><span>III</span><span>Réunion informelle</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 PRIVATISATION ============ -->
+<section class="section" id="privatisation" aria-labelledby="titre-privatisation">
+  <div class="wrap">
+    <p class="kicker"><span>06</span><span class="rule"></span><span>Privatisation</span></p>
+    <h2 class="h2" id="titre-privatisation" style="margin-top:32px;max-width:1100px">Privatisations &amp; événements</h2>
+    <div class="privat">
+      <div>
+        <p class="lead">MUSE accueille des <strong>événements professionnels comme privés</strong>, à quelques pas de la gare Montpellier Saint-Roch.</p>
+        <p>Plusieurs configurations sont possibles selon le nombre de participants et le format souhaité :</p>
+        <ul class="numbered numbered--wide">
+          <li><span>I</span><span>Mezzanine</span></li>
+          <li><span>II</span><span>Salle intérieure</span></li>
+          <li><span>III</span><span>Terrasse</span></li>
+          <li><span>IV</span><span>Privatisation complète de MUSE</span></li>
+        </ul>
+        <p style="margin-top:8px">Nous pouvons notamment accueillir :</p>
+        <ul class="pills">
+          <li>séminaires</li><li>repas d’entreprise</li><li>cocktails</li><li>afterworks</li><li>lancements de produits</li><li>réunions</li><li>anniversaires</li><li>repas de famille</li><li>réceptions et événements privés</li>
+        </ul>
+        <p style="margin-top:8px">Les propositions de restauration sont adaptées à chaque événement : <strong>repas assis, cocktails, buffets, assiettes à partager ou formules sur mesure</strong>.</p>
+        <p>L’organisation peut également intégrer, selon les projets, une programmation musicale, un DJ, une exposition ou une scénographie spécifique.</p>
+        <p>Grâce à son architecture, sa décoration et ses différents espaces, <strong>MUSE peut également accueillir des shootings photo, productions de contenu et tournages</strong>.</p>
+        <p>Chaque projet de privatisation est étudié individuellement afin d’adapter les espaces, la restauration et l’organisation à l’événement.</p>
+      </div>
+      <aside aria-label="Contact privatisation">
+        <picture>
+          <source type="image/avif" srcset="assets/img/muse-montpellier-salle-baies-vitrees-480.avif 480w, assets/img/muse-montpellier-salle-baies-vitrees-800.avif 800w, assets/img/muse-montpellier-salle-baies-vitrees-1200.avif 1200w" sizes="(min-width: 1000px) 560px, 100vw">
+          <source type="image/webp" srcset="assets/img/muse-montpellier-salle-baies-vitrees-480.webp 480w, assets/img/muse-montpellier-salle-baies-vitrees-800.webp 800w, assets/img/muse-montpellier-salle-baies-vitrees-1200.webp 1200w" sizes="(min-width: 1000px) 560px, 100vw">
+          <img src="assets/img/muse-montpellier-salle-baies-vitrees-800.jpg" width="800" height="640" alt="La salle de MUSE au crépuscule, baies vitrées ouvertes sur le quartier Saint-Roch" loading="lazy" decoding="async">
+        </picture>
+        <div class="contact-card">
+          <h3>Parlons de votre événement</h3>
+          <p>Date, nombre de personnes, espace souhaité, format de restauration : écrivez-nous ou appelez-nous.</p>
+          <div class="btn-row">
+            <a class="btn btn--light" href="mailto:musemtp@gmail.com?subject=Privatisation%20MUSE"><svg width="16" height="16" aria-hidden="true"><use href="#i-mail"/></svg>Nous écrire</a>
+            <a class="btn btn--ghost-light" href="tel:+33467851773"><svg width="16" height="16" aria-hidden="true"><use href="#i-phone"/></svg>04&nbsp;67&nbsp;85&nbsp;17&nbsp;73</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ PIED DE PAGE ============ -->
+<footer class="site-footer">
+  <div class="wrap" style="padding-top:clamp(64px,8vw,112px);padding-bottom:32px">
+    <div class="site-footer__logo"><svg viewBox="0 0 355.7 84.7" role="img" aria-label="MUSE"><use href="#logo-muse"/></svg></div>
+    <p class="site-footer__tag">brasserie bistronomique</p>
+    <div class="site-footer__grid">
+      <div>
+        <h2>Adresse</h2>
+        <p>MUSE – Brasserie Bistronomique<br>Rez-de-chaussée de Higher Roch<br>123 rue Alexandra David-Néel<br>34000 Montpellier</p>
+      </div>
+      <div>
+        <h2>Horaires · 7j/7</h2>
+        <p>Petit-déjeuner 7h – 10h30<br>Déjeuner 12h – 14h<br>Dîner 19h – 22h<br>Service continu</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="tel:+33467851773">04&nbsp;67&nbsp;85&nbsp;17&nbsp;73</a></li>
+          <li><a href="mailto:musemtp@gmail.com">musemtp@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/musemontpellier/" target="_blank" rel="noopener">Instagram · @musemontpellier</a></li>
+          <li><a href="https://share.google/rW8JSTQi1CLAcIaZ5" target="_blank" rel="noopener">Google · 4,8 ★ · 163 avis</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Réserver</h2>
+        <p><a class="btn btn--light" href="https://foodcollect.fr/store/muse/reserver" target="_blank" rel="noopener">Réserver une table</a></p>
+      </div>
+    </div>
+    <div class="site-footer__legal">
+      <p>Scénographie &amp; direction artistique : Christophe Goutes, Atelier Martine Andrée</p>
+      <p>Photos © Brice Pelleschi / ADAGP</p>
+      <p>© 2026 MUSE Montpellier</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Visionneuse des pages de carte -->
+<dialog class="lightbox" id="visionneuse" aria-labelledby="visionneuse-titre">
+  <div class="lightbox__bar">
+    <p class="lightbox__label" id="visionneuse-titre">Carte agrandie</p>
+    <div class="lightbox__actions">
+      <button class="round-btn" type="button" data-lightbox="prev" aria-label="Page précédente"><svg width="18" height="18" aria-hidden="true"><use href="#i-prev"/></svg></button>
+      <button class="round-btn" type="button" data-lightbox="next" aria-label="Page suivante"><svg width="18" height="18" aria-hidden="true"><use href="#i-next"/></svg></button>
+      <button class="round-btn round-btn--dark" type="button" data-lightbox="close" aria-label="Fermer"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    </div>
+  </div>
+  <div class="lightbox__body"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" width="1600" height="2262"></div>
+</dialog>
+
+</body>
 </html>
