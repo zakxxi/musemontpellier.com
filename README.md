@@ -1,0 +1,74 @@
+# musemontpellier.com
+
+Site one page de **MUSE**, brasserie bistronomique à Montpellier (rez-de-chaussée de Higher Roch, quartier Nouveau Saint-Roch).
+
+HTML/CSS/JS statiques, sans framework ni étape de build. Hébergé sur GitHub Pages (`CNAME` → `musemontpellier.com`).
+
+## Structure
+
+```
+index.html                  la page (contenu, SEO, données structurées)
+assets/css/style.css        styles, mobile first
+assets/js/main.js           menu mobile, onglets de la carte, curseurs, visionneuse
+assets/fonts/               Newsreader + Hanken Grotesk (woff2 auto-hébergés, sous-ensemble latin)
+assets/img/                 photos optimisées (AVIF + WebP + JPEG de secours, plusieurs largeurs)
+assets/carte/               pages des cartes en images (générées depuis les PDF)
+assets/pdf/                 cartes PDF téléchargeables
+assets/brand/               logo, icônes, image de partage (og-image.jpg)
+scripts/build-images.mjs    pipeline images (sharp)
+scripts/images.config.json  liste des images : source, nom SEO, recadrage, largeurs
+sitemap.xml, robots.txt, site.webmanifest, favicon.*
+```
+
+## Mettre à jour la carte (à chaque changement de saison)
+
+Prérequis, une seule fois : Node 18+, `npm install`, et poppler (`brew install poppler` sur macOS).
+
+1. Remplacer les PDF dans le dossier DATA du projet (mêmes noms de fichiers).
+2. Régénérer les images des cartes et les PDF renommés :
+   ```bash
+   npm run images -- "/chemin/vers/AK-2609 WEBSITE MUSE/00 DATA" --only=carte
+   npm run images -- "/chemin/vers/AK-2609 WEBSITE MUSE/00 DATA" --only=pdfs
+   ```
+3. Dans `index.html`, mettre à jour la mention « Carte de saison · septembre – octobre 2026 ».
+4. Si le nombre de pages change, ajuster `carte.pages` dans `scripts/images.config.json` et les blocs `<a class="page-btn">` dans `index.html`.
+5. Commit et push : le site se met à jour tout seul.
+
+## Ajouter ou changer une photo
+
+1. Ajouter une entrée dans `scripts/images.config.json` (source, nom en slug SEO, ratio de recadrage, largeurs).
+2. `npm run images -- "/chemin/vers/00 DATA" --only=photos`
+3. Dans `index.html`, dupliquer un bloc `<picture>` existant et changer le nom et le texte alternatif.
+
+Les dimensions de chaque image sont dans `scripts/images.manifest.json`.
+
+## Référencement en place
+
+- Balises title, description, canonical, Open Graph et Twitter Card, avec une image de partage en 1200 × 630.
+- Données structurées JSON-LD `Restaurant` : adresse, téléphone, email, horaires, cuisine, réservation, menu, Instagram.
+- `sitemap.xml` (avec les images principales) et `robots.txt`.
+- HTML sémantique : un seul `h1`, titres hiérarchisés, textes alternatifs descriptifs, noms de fichiers explicites.
+- Performance : AVIF/WebP en `srcset`, chargement différé, préchargement de l'image d'accueil et de la police principale, polices auto-hébergées (pas d'appel à Google Fonts, plus simple côté RGPD).
+- Lighthouse mobile en local : performance 99, accessibilité 100, bonnes pratiques 100, SEO 100.
+
+## À faire après la mise en ligne
+
+- [ ] **Fiche Google Business Profile** : renseigner l'URL du site (elle indique « Ajouter un site Web »). C'est le levier n°1 pour le référencement local.
+- [ ] Google Search Console : ajouter la propriété `musemontpellier.com` et soumettre `sitemap.xml`.
+- [ ] Vérifier le partage du lien (Facebook Sharing Debugger, aperçu WhatsApp/LinkedIn).
+
+## À compléter
+
+- [ ] **URL de la page Facebook** : les emplacements sont signalés en commentaire dans `index.html` (en-tête et « Suivre MUSE »). À ajouter aussi dans `sameAs` du JSON-LD.
+- [ ] **Heure de fermeture** : le JSON-LD indique 7h → minuit, 7j/7 (d'après la fiche Google). À confirmer.
+- [ ] **Mentions légales** : obligatoires en France pour un site professionnel (raison sociale, SIRET, adresse, directeur de la publication, hébergeur GitHub Inc.).
+- [ ] Avis Google : seuls la note et le nombre d'avis sont affichés, en dur. Pour afficher les avis eux-mêmes, il faut un widget ou l'API Google Places.
+
+## Mise en ligne sur GitHub Pages
+
+Settings → Pages → Deploy from a branch → `main` / root. Domaine personnalisé : `musemontpellier.com`, puis cocher « Enforce HTTPS ».
+Côté DNS, faire pointer le domaine vers GitHub Pages en suivant la doc GitHub : « Managing a custom domain for your GitHub Pages site ».
+
+## Crédits
+
+Photos © Brice Pelleschi / ADAGP · Scénographie & direction artistique : Christophe Goutes, Atelier Martine Andrée.

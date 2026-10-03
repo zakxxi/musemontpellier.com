@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://musemontpellier.com/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <image:image>
+      <image:loc>https://musemontpellier.com/assets/img/muse-montpellier-tour-higher-roch-paysage-1600.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://musemontpellier.com/assets/img/muse-montpellier-salle-crepuscule-saint-roch-800.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://musemontpellier.com/assets/img/muse-montpellier-salle-baies-vitrees-800.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://musemontpellier.com/assets/img/muse-montpellier-salle-plantes-bananier-800.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://musemontpellier.com/assets/img/muse-montpellier-cuisine-ouverte-800.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://musemontpellier.com/assets/img/muse-montpellier-bar-grandes-tables-800.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://musemontpellier.com/assets/img/muse-montpellier-assiette-saison-01-800.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://musemontpellier.com/assets/img/muse-montpellier-assiette-saison-02-800.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://musemontpellier.com/assets/carte/muse-montpellier-carte-midi-1000.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://musemontpellier.com/assets/carte/muse-montpellier-carte-soir-1000.jpg</image:loc>
+    </image:image>
+  </url>
+</urlset>

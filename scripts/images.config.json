@@ -1,0 +1,65 @@
+{
+  "$comment": "Sources relatives au dossier DATA passé en argument. Sorties dans assets/. Noms de fichiers = slugs SEO.",
+  "formats": {
+    "avif": { "quality": 55, "effort": 6 },
+    "webp": { "quality": 78, "effort": 6 },
+    "jpeg": { "quality": 80, "mozjpeg": true }
+  },
+  "photos": [
+    {
+      "src": "photo muse/Batiment/_DSC8956.jpg",
+      "name": "muse-montpellier-tour-higher-roch",
+      "alt": "La tour Higher Roch, dont MUSE occupe le rez-de-chaussée, quartier Nouveau Saint-Roch à Montpellier",
+      "variants": [
+        { "suffix": "paysage", "aspect": [2, 1], "position": "centre", "widths": [800, 1200, 1600, 2320], "fallback": 1600 },
+        { "suffix": "portrait", "aspect": [2, 3], "position": "top", "widths": [480, 800, 1200], "fallback": 800 }
+      ]
+    },
+    { "src": "photo muse/lieu/Muse_DSC9927_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-salle-crepuscule-saint-roch", "widths": [480, 800, 1200], "fallback": 800 },
+    { "src": "photo muse/lieu/Muse_DSC9930_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-salle-baies-vitrees", "widths": [480, 800, 1200], "fallback": 800 },
+    { "src": "photo muse/lieu/Muse_DSC9895_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-salle-plantes-bananier", "widths": [480, 800, 1200], "fallback": 800 },
+    { "src": "photo muse/lieu/Muse_DSC9894_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-salle-tables-sequoia", "widths": [480, 800, 1200], "fallback": 800 },
+    { "src": "photo muse/lieu/Muse_DSC9896_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-bar-grandes-tables", "widths": [480, 800, 1200], "fallback": 800 },
+    { "src": "photo muse/cuisine/Muse_DSC9751_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-cuisine-ouverte", "widths": [480, 800, 1200, 1600], "fallback": 800 },
+    { "src": "photo muse/cuisine/Muse_DSC9811 1_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-dressage-assiette", "widths": [480, 800, 1200], "fallback": 800 },
+    { "src": "photo muse/cuisine/Muse_DSC9908_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-brigade-en-cuisine", "widths": [480, 800, 1200], "fallback": 800 },
+    { "src": "photo muse/plat automne/Muse_DSC9843_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-assiette-saison-01", "aspect": [4, 5], "widths": [480, 800, 1000], "fallback": 800 },
+    { "src": "photo muse/cuisine/Muse_DSC9938_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-assiette-saison-02", "aspect": [4, 5], "widths": [480, 800, 1000], "fallback": 800 },
+    { "src": "photo muse/plat automne/Muse_DSC9827 1_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-assiette-saison-03", "aspect": [4, 5], "widths": [480, 800, 1000], "fallback": 800 },
+    { "src": "photo muse/plat automne/Muse_DSC9886_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-assiette-saison-04", "aspect": [4, 5], "widths": [480, 800, 1000], "fallback": 800 },
+    { "src": "photo muse/plat automne/Muse_DSC9854_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-assiette-saison-05", "aspect": [4, 5], "widths": [480, 800, 1000], "fallback": 800 },
+    { "src": "photo muse/plat automne/Muse_DSC9839_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-assiette-saison-06", "aspect": [4, 5], "widths": [480, 800, 1000], "fallback": 800 },
+    { "src": "photo muse/plat automne/Muse_DSC9856_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-assiette-saison-07", "aspect": [595, 842], "widths": [480, 800], "fallback": 800 },
+    { "src": "photo muse/cuisine/Muse_DSC9910_©bricepelleschi-@dagp-2026.jpg", "name": "muse-montpellier-assiette-saison-08", "aspect": [595, 842], "widths": [480, 800], "fallback": 800 }
+  ],
+  "carte": {
+    "widths": [600, 1000, 1600],
+    "fallback": 1000,
+    "dpi": 240,
+    "pages": [
+      { "pdf": "menus/Menu sept oct 26.pdf", "page": 1, "name": "muse-montpellier-carte-midi" },
+      { "pdf": "menus/Menu sept oct 26.pdf", "page": 2, "name": "muse-montpellier-carte-soir" },
+      { "pdf": "boissons/Carte boisson chaude.pdf", "page": 1, "name": "muse-montpellier-boissons-chaudes-softs" },
+      { "pdf": "boissons/Carte boissons A4", "prefix": true, "page": 2, "name": "muse-montpellier-boissons-softs-bieres" },
+      { "pdf": "boissons/Carte boissons A4", "prefix": true, "page": 4, "name": "muse-montpellier-boissons-spritz-aperitifs" },
+      { "pdf": "boissons/Carte boissons A4", "prefix": true, "page": 5, "name": "muse-montpellier-boissons-cocktails-alcools" },
+      { "pdf": "boissons/Carte boissons A4", "prefix": true, "page": 6, "name": "muse-montpellier-boissons-rhums" },
+      { "pdf": "boissons/Carte boissons A4", "prefix": true, "page": 7, "name": "muse-montpellier-boissons-whiskies-gins" },
+      { "pdf": "boissons/Carte boissons A4", "prefix": true, "page": 8, "name": "muse-montpellier-boissons-vodkas-tequilas-mezcals" },
+      { "pdf": "boissons/Carte boissons A4", "prefix": true, "page": 3, "name": "muse-montpellier-vins-au-verre" },
+      { "pdf": "boissons/Carte des vins full.pdf", "page": 1, "name": "muse-montpellier-vins-rouges-languedoc" },
+      { "pdf": "boissons/Carte des vins full.pdf", "page": 2, "name": "muse-montpellier-vins-rouges-rhone-bourgogne-loire" },
+      { "pdf": "boissons/Carte des vins full.pdf", "page": 3, "name": "muse-montpellier-vins-rouges-roussillon-espagne" },
+      { "pdf": "boissons/Carte des vins full.pdf", "page": 4, "name": "muse-montpellier-vins-blancs-languedoc-bourgogne" },
+      { "pdf": "boissons/Carte des vins full.pdf", "page": 5, "name": "muse-montpellier-vins-blancs-loire-roussillon-espagne" },
+      { "pdf": "boissons/Carte des vins full.pdf", "page": 6, "name": "muse-montpellier-vins-roses-orange" },
+      { "pdf": "boissons/Carte des vins full.pdf", "page": 7, "name": "muse-montpellier-champagnes" }
+    ]
+  },
+  "pdfs": [
+    { "src": "menus/Menu sept oct 26.pdf", "name": "muse-montpellier-carte-midi-soir.pdf" },
+    { "src": "boissons/Carte boissons A4", "prefix": true, "name": "muse-montpellier-carte-boissons.pdf" },
+    { "src": "boissons/Carte boisson chaude.pdf", "name": "muse-montpellier-boissons-chaudes.pdf" },
+    { "src": "boissons/Carte des vins full.pdf", "name": "muse-montpellier-carte-des-vins.pdf" }
+  ]
+}
