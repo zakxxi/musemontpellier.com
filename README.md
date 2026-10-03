@@ -8,6 +8,7 @@ HTML/CSS/JS statiques, sans framework ni étape de build. Hébergé sur GitHub P
 
 ```
 index.html                  la page (contenu, SEO, données structurées)
+mentions-legales.html       mentions légales (non indexée)
 assets/css/style.css        styles, mobile first
 assets/js/main.js           menu mobile, onglets de la carte, curseurs, visionneuse
 assets/fonts/               Newsreader + Hanken Grotesk (woff2 auto-hébergés, sous-ensemble latin)
@@ -59,9 +60,7 @@ Les dimensions de chaque image sont dans `scripts/images.manifest.json`.
 
 ## À compléter
 
-- [ ] **URL de la page Facebook** : les emplacements sont signalés en commentaire dans `index.html` (en-tête et « Suivre MUSE »). À ajouter aussi dans `sameAs` du JSON-LD.
 - [ ] **Heure de fermeture** : le JSON-LD indique 7h → minuit, 7j/7 (d'après la fiche Google). À confirmer.
-- [ ] **Mentions légales** : obligatoires en France pour un site professionnel (raison sociale, SIRET, adresse, directeur de la publication, hébergeur GitHub Inc.).
 - [ ] Avis Google : seuls la note et le nombre d'avis sont affichés, en dur. Pour afficher les avis eux-mêmes, il faut un widget ou l'API Google Places.
 
 ## Mise en ligne sur GitHub Pages
