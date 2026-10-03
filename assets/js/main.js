@@ -20,6 +20,30 @@
   }
 
   /* ---------- Curseurs horizontaux (galerie, pages de carte) ---------- */
+  // Flèches grisées en début/fin de course, masquées quand tout tient à l'écran.
+  const updateSlider = (slider) => {
+    const track = slider.querySelector('.slider__track');
+    const nav = slider.querySelector('.slider__nav');
+    if (!track || !nav || !track.clientWidth) return; // panneau masqué : on attend qu'il s'affiche
+    const max = track.scrollWidth - track.clientWidth;
+    const scrollable = max > 2;
+    nav.hidden = !scrollable;
+    nav.querySelector('[data-slide="prev"]').disabled = track.scrollLeft <= 2;
+    nav.querySelector('[data-slide="next"]').disabled = track.scrollLeft >= max - 2;
+    const hint = slider.querySelector('[data-hint]');
+    if (hint) hint.textContent = scrollable ? 'Faites défiler, touchez une page pour l’agrandir.' : 'Touchez une page pour l’agrandir.';
+  };
+  const sliders = [...document.querySelectorAll('[data-slider]')];
+  const resizeObserver = 'ResizeObserver' in window ? new ResizeObserver((entries) => entries.forEach((en) => updateSlider(en.target.closest('[data-slider]')))) : null;
+  sliders.forEach((slider) => {
+    const track = slider.querySelector('.slider__track');
+    if (!track) return;
+    track.addEventListener('scroll', () => updateSlider(slider), { passive: true });
+    if (resizeObserver) resizeObserver.observe(track);
+    updateSlider(slider);
+  });
+  window.addEventListener('load', () => sliders.forEach(updateSlider));
+
   document.addEventListener('click', (e) => {
     const btn = e.target.closest('[data-slide]');
     if (!btn) return;
@@ -41,6 +65,8 @@
     });
     const track = panels[index].querySelector('.slider__track');
     if (track) track.scrollLeft = 0;
+    const slider = panels[index].querySelector('[data-slider]');
+    if (slider) updateSlider(slider);
     if (focus) tabs[index].focus();
   };
   tabs.forEach((tab, i) => {
