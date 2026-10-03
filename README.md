@@ -70,4 +70,4 @@ Côté DNS, faire pointer le domaine vers GitHub Pages en suivant la doc GitHub 
 
 ## Crédits
 
-Photos © Brice Pelleschi / ADAGP · Scénographie & direction artistique : Christophe Goutes, Atelier Martine Andrée.
+Photos © [Brice Pelleschi](https://www.bricepelleschi.net/) / ADAGP · Scénographie & direction artistique : Christophe Goutes, Atelier Martine Andrée · Conception et développement : [AKER](https://aker.pro/).

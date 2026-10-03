@@ -457,6 +457,9 @@ strong { font-weight: 600; }
   font-size: 13px; line-height: 1.6; color: var(--soft);
 }
 
+.site-footer__legal a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(255, 255, 255, .35); }
+.site-footer__legal a:hover { text-decoration-color: currentColor; }
+
 /* ---------- Mouvement réduit ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
