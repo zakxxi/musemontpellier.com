@@ -319,7 +319,14 @@ strong { font-weight: 600; }
 .rating:hover { color: var(--ink); background: var(--stone); }
 .rating__score { display: flex; align-items: center; gap: 14px; }
 .rating__value { font: 400 54px/1 var(--serif); letter-spacing: -.02em; }
-.rating__stars { display: flex; gap: 2px; }
+.rating__stars { position: relative; display: inline-flex; line-height: 0; }
+.rating__stars-base, .rating__stars-fill { display: flex; }
+.rating__stars-base { color: var(--line-strong); }
+.rating__stars-fill {
+  position: absolute; inset: 0 auto 0 0; overflow: hidden; white-space: nowrap;
+  width: var(--fill, 100%);
+}
+.rating__stars svg { flex: none; }
 .rating__count { font-size: 14px; line-height: 1; color: var(--grey); margin-top: 6px; }
 .rating__cta { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font: 500 12px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; }
 

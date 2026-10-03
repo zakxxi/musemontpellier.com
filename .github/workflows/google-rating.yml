@@ -1,0 +1,47 @@
+# Met à jour chaque jour la note et le nombre d'avis Google affichés sur le site.
+# La clé API est lue dans les secrets du repo (Settings › Secrets and variables › Actions).
+name: Note Google
+
+on:
+  schedule:
+    - cron: '23 4 * * *' # tous les jours, tôt le matin (heure de Paris)
+  workflow_dispatch: # lancement manuel depuis l'onglet Actions
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: google-rating
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Récupérer la note Google
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+        run: node scripts/update-google-rating.mjs
+
+      - name: Publier si la note a changé
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Rien à publier."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html scripts/google-place.json
+          git commit -m "Note Google : mise à jour automatique"
+          git push
+          gh api --method POST "repos/${{ github.repository }}/pages/builds" \
+            || echo "Reconstruction Pages non déclenchée ici, elle se fera au prochain push."

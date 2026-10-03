@@ -17,6 +17,8 @@ assets/carte/               pages des cartes en images (générées depuis les P
 assets/pdf/                 cartes PDF téléchargeables
 assets/brand/               logo, icônes, image de partage (og-image.jpg)
 scripts/build-images.mjs    pipeline images (sharp)
+scripts/update-google-rating.mjs  note et nombre d'avis Google (API Places)
+.github/workflows/          mise à jour quotidienne de la note Google
 scripts/images.config.json  liste des images : source, nom SEO, recadrage, largeurs
 sitemap.xml, robots.txt, site.webmanifest, favicon.*
 ```
@@ -43,6 +45,22 @@ Prérequis, une seule fois : Node 18+, `npm install`, et poppler (`brew install 
 
 Les dimensions de chaque image sont dans `scripts/images.manifest.json`.
 
+## Note Google automatique
+
+Chaque jour, l'Action « Note Google » (`.github/workflows/google-rating.yml`) interroge l'API Google Places (New), met à jour la note, le nombre d'avis et le remplissage des étoiles dans `index.html`, puis committe si quelque chose a changé.
+
+- La clé API est un **secret du repo** : `GOOGLE_PLACES_API_KEY` (Settings › Secrets and variables › Actions). Elle n'apparaît jamais dans le code.
+- Au premier lancement, le Place ID de MUSE est retrouvé par recherche, vérifié (nom + adresse), puis mémorisé dans `scripts/google-place.json`.
+- Lancement manuel : onglet Actions › Note Google › Run workflow.
+- Test local sans clé : `node scripts/update-google-rating.mjs --fake=4.7,180`.
+- GitHub met en pause les tâches planifiées d'un repo public sans activité pendant 60 jours : si la note ne bouge plus pendant longtemps, relancer l'Action à la main.
+
+## Cookies et RGPD
+
+Le site ne dépose **aucun cookie** et n'utilise aucun traceur : polices auto-hébergées, pas de mesure d'audience, pas de widget ni de carte intégrés, note Google récupérée côté serveur. **Aucun bandeau de consentement n'est donc requis** (règles CNIL). Les mentions légales le précisent.
+
+Si on ajoute un jour une mesure d'audience, une carte Google Maps intégrée, une vidéo YouTube, un flux Instagram ou un pixel publicitaire, il faudra soit un bandeau de consentement conforme CNIL (par exemple tarteaucitron.js), soit un outil de mesure exempté de consentement (Matomo configuré selon les recommandations CNIL).
+
 ## Référencement en place
 
 - Balises title, description, canonical, Open Graph et Twitter Card, avec une image de partage en 1200 × 630.
@@ -61,7 +79,7 @@ Les dimensions de chaque image sont dans `scripts/images.manifest.json`.
 ## À compléter
 
 - [ ] **Heure de fermeture** : le JSON-LD indique 7h → minuit, 7j/7 (d'après la fiche Google). À confirmer.
-- [ ] Avis Google : seuls la note et le nombre d'avis sont affichés, en dur. Pour afficher les avis eux-mêmes, il faut un widget ou l'API Google Places.
+- [ ] Avis Google : seuls la note et le nombre d'avis sont affichés. Pour afficher le texte de quelques avis, étendre `scripts/update-google-rating.mjs` (champ `reviews` de l'API, avec l'attribution exigée par Google).
 
 ## Mise en ligne sur GitHub Pages
 
