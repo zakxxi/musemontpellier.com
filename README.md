@@ -61,7 +61,6 @@ Les dimensions de chaque image sont dans `scripts/images.manifest.json`.
 ## À compléter
 
 - [ ] **Heure de fermeture** : le JSON-LD indique 7h → minuit, 7j/7 (d'après la fiche Google). À confirmer.
-- [ ] **Mentions légales** (`mentions-legales.html`) : il manque le capital social de la SAS et le nom du directeur de la publication (emplacements en commentaire dans le fichier).
 - [ ] Avis Google : seuls la note et le nombre d'avis sont affichés, en dur. Pour afficher les avis eux-mêmes, il faut un widget ou l'API Google Places.
 
 ## Mise en ligne sur GitHub Pages
