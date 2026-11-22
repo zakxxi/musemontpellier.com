@@ -78,7 +78,6 @@ Si on ajoute un jour une mesure d'audience, une carte Google Maps intégrée, un
 
 ## À compléter
 
-- [ ] **Heure de fermeture** : le JSON-LD indique 7h → minuit, 7j/7 (d'après la fiche Google). À confirmer.
 - [ ] Avis Google : seuls la note et le nombre d'avis sont affichés. Pour afficher le texte de quelques avis, étendre `scripts/update-google-rating.mjs` (champ `reviews` de l'API, avec l'attribution exigée par Google).
 
 ## Mise en ligne sur GitHub Pages
