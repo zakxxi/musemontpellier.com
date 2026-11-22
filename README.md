@@ -78,6 +78,7 @@ Si on ajoute un jour une mesure d'audience, une carte Google Maps intégrée, un
 
 ## À compléter
 
+- [ ] **Après les fêtes** : retirer le bandeau « Merry and Muse » (bloc `<aside class="noel">` dans index.html, bloc « Bandeau » de main.js, styles `.noel` dans style.css, photos `muse-montpellier-menu-noel-*` dans assets/img).
 - [ ] Avis Google : seuls la note et le nombre d'avis sont affichés. Pour afficher le texte de quelques avis, étendre `scripts/update-google-rating.mjs` (champ `reviews` de l'API, avec l'attribution exigée par Google).
 
 ## Mise en ligne sur GitHub Pages

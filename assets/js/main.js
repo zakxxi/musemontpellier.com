@@ -3,6 +3,10 @@
   'use strict';
   document.documentElement.classList.remove('no-js');
 
+  /* ---------- Bandeau « Merry and Muse » : la croix le masque jusqu'au prochain chargement ---------- */
+  const noelClose = document.querySelector('.noel__close');
+  if (noelClose) noelClose.addEventListener('click', () => { noelClose.closest('.noel').hidden = true; });
+
   /* ---------- Menu mobile ---------- */
   const burger = document.querySelector('.burger');
   const mobileNav = document.getElementById('menu-mobile');

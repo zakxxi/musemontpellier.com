@@ -212,6 +212,52 @@ section[id] { scroll-margin-top: 0; }
   .burger, .mobile-nav { display: none !important; }
 }
 
+/* ---------- Bandeau « Merry and Muse » (menu de Noël, temporaire) ---------- */
+/* Revient à chaque chargement ; la croix le masque seulement pour la page en cours. */
+.noel {
+  --noel-red: #b41e1e; --noel-wine: #301010; --noel-ivory: #f6efe6;
+  display: grid; position: relative; margin-top: var(--header);
+  background: var(--noel-red); color: var(--noel-ivory);
+  border-block: 6px solid var(--noel-wine);
+}
+.noel[hidden] { display: none; }
+.noel:not([hidden]) + .hero { padding-top: clamp(28px, 5vw, 64px); }
+.noel__media img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.noel__body {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 14px;
+  padding: clamp(28px, 5vw, 64px) var(--gutter) clamp(36px, 5vw, 64px);
+}
+.noel__title {
+  font: 500 clamp(56px, 9vw, 132px)/.88 var(--serif);
+  letter-spacing: -.02em; text-transform: uppercase; margin-bottom: 10px;
+}
+.noel__title span { display: block; }
+.noel__lead { font: 500 clamp(17px, 1.6vw, 22px)/1.3 var(--serif); letter-spacing: .05em; }
+.noel__info { font: 500 clamp(14px, 1.2vw, 16px)/1.45 var(--serif); letter-spacing: .06em; }
+.noel__lead sup { font-size: .6em; vertical-align: .55em; line-height: 0; }
+.noel__menu { max-width: 52ch; font: italic 400 17px/1.5 var(--serif); }
+.noel__btn {
+  display: inline-flex; align-items: center; gap: 12px; margin-top: 10px;
+  min-height: 48px; padding: 0 28px;
+  background: var(--noel-ivory); color: var(--noel-red); text-decoration: none;
+  font: 500 13px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase;
+  transition: background-color .2s, color .2s;
+}
+.noel__btn:hover { background: var(--noel-wine); color: var(--noel-ivory); }
+.noel__close {
+  position: absolute; top: 8px; right: 8px;
+  width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center;
+  background: var(--noel-red); color: var(--noel-ivory); border: 0; border-radius: 50%; padding: 0; cursor: pointer;
+}
+.noel__close:hover { background: var(--noel-ivory); color: var(--noel-red); }
+.noel :focus-visible { outline-color: var(--noel-ivory); }
+@media (min-width: 900px) {
+  .noel { grid-template-columns: 1fr 1fr; }
+  .noel__media { position: relative; min-height: 520px; }
+  .noel__media img { position: absolute; inset: 0; height: 100%; aspect-ratio: auto; }
+  .noel__body { justify-content: center; padding-inline: clamp(40px, 5vw, 88px); }
+}
+
 /* ---------- Accueil ---------- */
 .hero { padding-top: calc(var(--header) + clamp(28px, 5vw, 64px)); padding-bottom: clamp(28px, 4vw, 48px); }
 .hero__title { position: relative; color: var(--ink); }
